@@ -259,3 +259,201 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+  font-weight: light;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-LightItalic.ttf);
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Thin.ttf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-ThinItalic.ttf);
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC";
+  src: url(../fonts/PlayfairDisplaySC-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC";
+  src: url(../fonts/PlayfairDisplaySC-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+html {
+  font-size: 125%;
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  font-family: "PlayfairDisplaySC";
+  font-weight: normal;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  font-family: "PlayfairDisplaySC";
+  color: #50e3c2;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #FAffFE;
+}
+
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  color: #50e3c2;
+}
+.navContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navContainer ul li {
+  margin-right: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #FAffFE;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.navContainer ul li:hover {
+  color: #50e3c2;
+}
+.navContainer ul li:focus {
+  color: #50e3c2;
+}
+
+.homeBackgroundTop {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: auto;
+  margin-bottom: 180px;
+}
+.homeBackgroundTop header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+.homeBackgroundTop header .headerBoxImage {
+  width: 40%;
+  position: relative;
+  top: 90px;
+}
+.homeBackgroundTop header .headerBoxImage img {
+  width: 100%;
+  display: block;
+}
+.homeBackgroundTop header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "PlayfairDisplaySC";
+  font-size: 5.8rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #063974;
+  z-index: 10;
+  position: relative;
+  top: 10rem;
+  right: 6.5%;
+}
+.homeBackgroundTop header h1 .h1Span {
+  font-family: "Lato";
+  color: #0c5f4c;
+  font-size: 2.2rem;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: 6.7px;
+  font-style: normal;
+}
+
+.homeBackgroundTop {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+}

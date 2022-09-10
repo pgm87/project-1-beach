@@ -1,0 +1,51 @@
+@use "variables" as *;
+
+.homeBackgroundTop {
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: auto;
+    margin-bottom: 180px;
+
+
+    header {
+        display: flex;
+        padding: 40px 0;
+
+        .headerBoxImage {
+            width: 40%;
+            position: relative;
+            top: 90px;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            font-family: $headingFont;
+            font-size: calc(5.8 * $baseFont);
+            font-weight: 900;
+            font-style: italic;
+            color: $twilightBlue;
+            z-index: 10;
+
+            position: relative;
+            top: 10rem;
+            right: 6.5%;
+
+
+            .h1Span {
+                font-family: $bodyFont;
+                color: $spruce;
+                font-size: calc(2.2 * $baseFont);
+                display: inline-block;
+                font-weight: bold;
+                line-height: 2rem;
+                letter-spacing: 6.7px;
+                font-style: normal;
+            }
+        }
+    }
+}

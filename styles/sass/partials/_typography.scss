@@ -56,27 +56,14 @@
 
 @font-face {
     font-family: "PlayfairDisplaySC";
-    src: url(../fonts/PlayfairDisplaySC-Regular.ttf);
-    font-weight: normal;
+    src: url(../fonts/PlayfairDisplaySC-Black.ttf);
+    font-weight: 900;
 }
 
 @font-face {
     font-family: "PlayfairDisplaySC";
-    src: url(../fonts/PlayfairDisplaySC-Italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "PlayfairDisplaySC";
-    src: url(../fonts/PlayfairDisplaySC-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "PlayfairDisplaySC";
-    src: url(../fonts/Lato-BoldItalic.ttf);
-    font-weight: bold;
+    src: url(../fonts/PlayfairDisplaySC-BlackItalic.ttf);
+    font-weight: 900;
     font-style: italic;
 }
 
@@ -96,6 +83,30 @@ input {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+    font-family: $headingFont;
+    font-weight: normal;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-family: $headingFont;
+    color: $greenCyan;
+    font-style: italic;
+    font-size: calc(1.4 * $baseFont);
 }
 
 a {
