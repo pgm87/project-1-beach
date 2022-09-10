@@ -498,3 +498,26 @@ body {
   width: 100%;
   display: block;
 }
+
+.homeGallery {
+  background-color: #d2f9f1;
+  margin-top: 80px;
+  padding: 100px 0;
+}
+.homeGallery .galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.homeGallery .galleryContainer .galleryImageContainer {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+}
+.homeGallery .galleryContainer .galleryImageContainer img {
+  width: 100%;
+  display: block;
+  height: auto;
+}

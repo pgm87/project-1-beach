@@ -1,1 +1,22 @@
-@use "partials/variables" as *;
+@use "variables" as *;
+
+.homeGallery {
+    background-color: $lightLightBlue;
+    margin-top: 80px;
+    padding: 100px 0;
+
+    .galleryContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .galleryImageContainer {
+            flex-basis: 31%;
+
+            img {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+        }
+    }
+}
