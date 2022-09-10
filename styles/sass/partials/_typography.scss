@@ -95,6 +95,7 @@ h1,
 h2,
 h3,
 h4,
+h6,
 blockquote {
     font-family: $headingFont;
     font-weight: normal;
@@ -116,6 +117,16 @@ a {
     transition: 0.3s;
 }
 
+h2 {
+    font-size: calc(2 * $baseFont);
+    font-family: $bodyFont;
+    font-weight: bold;
+    line-height: 1.5rem;
+    letter-spacing: 6.7px;
+    color: $spruce;
+
+}
+
 h3 {
     font-size: calc(2 * $baseFont);
     font-family: $bodyFont;
@@ -128,7 +139,21 @@ h3 {
 p {
     font-size: $baseFont;
     font-family: $bodyFont;
-    font-family: "Lato";
     line-height: 32px;
     letter-spacing: 2px;
+}
+
+h4 {
+    font-family: $bodyFont;
+    font-weight: bold;
+    font-size: calc(1.75 * $baseFont);
+    letter-spacing: 3.8px;
+    color: $twilightBlue;
+}
+
+h6 {
+    font-family: $bodyFont;
+    font-weight: lighter;
+    font-size: $baseFont;
+    color: $iceBlue;
 }

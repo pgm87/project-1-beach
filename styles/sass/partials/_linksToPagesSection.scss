@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.linksToPagesSection {
+    padding: 80px 0;
+    margin-bottom: 80px;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 45%;
+
+            a {
+
+                display: flex;
+                align-items: flex-start;
+
+                img {
+                    width: 20%;
+                    margin-right: 20px;
+                    position: relative;
+                    top: 10px;
+                    fill: $iceBlue;
+                    background-color: $greenCyan;
+                    padding: 5px;
+                    border-radius: 50%;
+
+                }
+            }
+
+
+        }
+    }
+}

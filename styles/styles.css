@@ -340,6 +340,7 @@ h1,
 h2,
 h3,
 h4,
+h6,
 blockquote {
   font-family: "PlayfairDisplaySC";
   font-weight: normal;
@@ -362,6 +363,15 @@ a {
   transition: 0.3s;
 }
 
+h2 {
+  font-size: 2rem;
+  font-family: "Lato";
+  font-weight: bold;
+  line-height: 1.5rem;
+  letter-spacing: 6.7px;
+  color: #0c5f4c;
+}
+
 h3 {
   font-size: 2rem;
   font-family: "Lato";
@@ -374,9 +384,23 @@ h3 {
 p {
   font-size: 1rem;
   font-family: "Lato";
-  font-family: "Lato";
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+h4 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+  color: #063974;
+}
+
+h6 {
+  font-family: "Lato";
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #FAffFE;
 }
 
 .wrapper {
@@ -520,4 +544,144 @@ body {
   width: 100%;
   display: block;
   height: auto;
+}
+
+.linksToPagesSection {
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+.linksToPagesSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.linksToPagesSection ul li {
+  width: 45%;
+}
+.linksToPagesSection ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.linksToPagesSection ul li a img {
+  width: 20%;
+  margin-right: 20px;
+  position: relative;
+  top: 10px;
+  fill: #FAffFE;
+  background-color: #50e3c2;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.newsAndPlanning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d2f9f1;
+}
+.newsAndPlanning .newsImages {
+  width: 42%;
+}
+.newsAndPlanning .image1 {
+  position: relative;
+  bottom: 50px;
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+}
+.newsAndPlanning .image2 {
+  position: relative;
+  top: 50px;
+  -webkit-box-shadow: -20px 20px #50e3c2;
+          box-shadow: -20px 20px #50e3c2;
+}
+.newsAndPlanning .newsContentBox {
+  width: 42%;
+}
+.newsAndPlanning .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5% 5% 5% 0%;
+}
+.newsAndPlanning .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 0 5% 5%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.newsAndPlanning .box2 p {
+  text-align: right;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+.promotion .promotionContentBox {
+  padding: 10% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.promotion .promotionContentBox p {
+  text-align: center;
+}
+
+footer {
+  background-color: #2c2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
