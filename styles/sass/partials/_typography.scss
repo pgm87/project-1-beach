@@ -1,0 +1,106 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-LightItalic.ttf);
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Thin.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-ThinItalic.ttf);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+// LATO FONTS ENDS
+
+@font-face {
+    font-family: "PlayfairDisplaySC";
+    src: url(../fonts/PlayfairDisplaySC-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PlayfairDisplaySC";
+    src: url(../fonts/PlayfairDisplaySC-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PlayfairDisplaySC";
+    src: url(../fonts/PlayfairDisplaySC-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PlayfairDisplaySC";
+    src: url(../fonts/Lato-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+// PlayfairDisplaySC font ends
+
+html {
+    font-size: 125%;
+}
+
+ul,
+li,
+a,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
