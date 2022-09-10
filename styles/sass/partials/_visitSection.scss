@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.visitSection {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+
+    .visitContentBox {}
+
+    .visitImageBox {
+        min-width: 28%;
+        margin-left: 10%;
+        box-shadow: -20px 20px $greenCyan;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+}

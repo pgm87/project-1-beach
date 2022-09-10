@@ -101,7 +101,7 @@ blockquote {
     margin: 0;
 }
 
-h4 {
+.logo {
     margin: 0;
     font-family: $headingFont;
     color: $greenCyan;
@@ -114,4 +114,21 @@ a {
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
+}
+
+h3 {
+    font-size: calc(2 * $baseFont);
+    font-family: $bodyFont;
+    font-weight: bold;
+    color: $spruce;
+    letter-spacing: 3.8px;
+    line-height: 2rem;
+}
+
+p {
+    font-size: $baseFont;
+    font-family: $bodyFont;
+    font-family: "Lato";
+    line-height: 32px;
+    letter-spacing: 2px;
 }

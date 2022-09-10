@@ -9,3 +9,13 @@
 body {
     background-color: $iceBlue;
 }
+
+.button {
+    font-family: $headingFont;
+    font-size: $baseFont;
+    font-style: italic;
+    color: $iceBlue;
+    background-color: $twilightBlue;
+    padding: 20px;
+
+}

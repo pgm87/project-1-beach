@@ -346,7 +346,7 @@ blockquote {
   margin: 0;
 }
 
-h4 {
+.logo {
   margin: 0;
   font-family: "PlayfairDisplaySC";
   color: #50e3c2;
@@ -362,6 +362,23 @@ a {
   transition: 0.3s;
 }
 
+h3 {
+  font-size: 2rem;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #0c5f4c;
+  letter-spacing: 3.8px;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Lato";
+  font-family: "Lato";
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -370,6 +387,15 @@ a {
 
 body {
   background-color: #FAffFE;
+}
+
+.button {
+  font-family: "PlayfairDisplaySC";
+  font-size: 1rem;
+  font-style: italic;
+  color: #FAffFE;
+  background-color: #063974;
+  padding: 20px;
 }
 
 .navContainer {
@@ -453,7 +479,22 @@ body {
   font-style: normal;
 }
 
-.homeBackgroundTop {
-  background-image: url(../assets/home-image-1.jpg);
-  background-size: cover;
+.visitSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.visitSection .visitImageBox {
+  min-width: 28%;
+  margin-left: 10%;
+  -webkit-box-shadow: -20px 20px #50e3c2;
+          box-shadow: -20px 20px #50e3c2;
+}
+.visitSection .visitImageBox img {
+  width: 100%;
+  display: block;
 }

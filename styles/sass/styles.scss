@@ -4,8 +4,5 @@
 @use "partials/baseStyles";
 @use "partials/nav";
 @use "partials/header";
-
-.homeBackgroundTop {
-    background-image: url(../assets/home-image-1.jpg);
-    background-size: cover;
-}
+@use "partials/visitSection";
+@use "partials/gallerySection";
