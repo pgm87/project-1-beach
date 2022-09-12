@@ -685,3 +685,21 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.blogBackgroundTop {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: auto;
+  margin-bottom: 180px;
+}
+
+.blogHeader {
+  padding: 10rem 0;
+}
+.blogHeader .blogH2 {
+  font-size: 4rem;
+  font-family: "Lato";
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 9px;
+  color: #FAffFE;
+}
