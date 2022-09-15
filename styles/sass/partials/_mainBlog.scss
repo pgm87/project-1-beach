@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.blogPost {
+    display: flex;
+    justify-content: space-between;
+
+
+    .blogImageAndPost {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        position: relative;
+        bottom: 300px;
+        border-right: 10px solid $greenCyan;
+        border-bottom: 10px solid $greenCyan;
+
+
+        .mainBlogImage {
+            width: 100%;
+
+            img {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+
+        }
+
+        .blogContent {
+            text-align: left;
+        }
+
+        .wrapper {
+
+            max-width: 700px;
+            width: 70%;
+        }
+    }
+}
+
+.pastBlogs {
+
+    width: 20%;
+}

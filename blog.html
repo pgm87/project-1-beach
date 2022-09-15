@@ -31,38 +31,69 @@
     </div>
     <!-- blog background image ends -->
     <main>
-        <div class="flexBlogAside">
-            <section class="blogPost">
-                <div class="blogImageAndContent">
-                    <div class="blog"><img src="./assets/gallery-image2.jpg" alt="A beachhouse at night"></div>
-                    <div class="blogContent">
-                        <h3>Five Days at the Ocean Sea</h3>
-                        <p class="subtitle">Monday January 13th 2009</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni eos praesentium ad
-                            libero nobis, eum delectus quos, ea porro quas animi rerum beatae, deleniti blanditiis
-                            officia ducimus at modi optio illo ratione aperiam. Aperiam consequatur atque, aliquid unde
-                            debitis consectetur corporis qui omnis dolorem commodi ea nihil, perspiciatis quod totam
-                            odio in ducimus asperiores esse quae beatae provident dicta veniam rerum deleniti. Nisi
-                            expedita perferendis fugit possimus ea explicabo, quis iusto dolores a autem accusantium
-                            sequi fugiat assumenda est ut nesciunt asperiores. Excepturi illum quis, repellat est rerum
-                            temporibus expedita. Impedit dignissimos facere beatae ab quisquam numquam optio fugiat
-                            delectus repudiandae veritatis natus, tempore voluptates consequatur maxime reprehenderit
-                            corporis cum sapiente, sit tenetur cumque perferendis cupiditate! Debitis blanditiis
-                            doloremque quidem nostrum dignissimos tempore itaque corporis nesciunt, est sunt saepe esse
-                            minima suscipit nobis vel aperiam nihil autem, molestias corrupti. Sed dolorem quae
-                            doloribus minus laborum facilis numquam vel quibusdam. Iste nostrum suscipit, qui sit
-                            corrupti eligendi nemo similique vel voluptatum quas? Asperiores mollitia odit facere
-                            placeat, nisi dolor tenetur repellendus, iure iusto, pariatur eos accusantium voluptatum
-                            quod quam perspiciatis atque corrupti? Facere consequatur enim minima eius similique,
-                            expedita nihil assumenda, itaque accusantium, nisi eaque deleniti eveniet dignissimos!
-                            Voluptatibus, voluptates!</p>
-                    </div>
-                    <!-- blog image and content ends -->
+
+        <section class="blogPost">
+            <div class="blogImageAndPost">
+                <div class="mainBlogImage"><img src="./assets/post-image.jpg" alt="A beachhouse at night"></div>
+                <article class="blogContent wrapper">
+                    <h3>Five Days at the Ocean Sea</h3>
+                    <p class="subtitle">Monday January 13th 2009</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni eos praesentium ad
+                        libero nobis, eum delectus quos, ea porro quas animi rerum beatae, deleniti blanditiis
+                        officia ducimus at modi optio illo ratione aperiam. Aperiam consequatur atque, aliquid unde
+                        debitis consectetur corporis qui omnis dolorem commodi ea nihil, perspiciatis quod totam
+                        odio in ducimus asperiores esse quae beatae provident dicta veniam rerum deleniti. Nisi
+                        expedita perferendis fugit possimus ea explicabo, quis iusto dolores a autem accusantium
+                        sequi fugiat assumenda est ut nesciunt asperiores. Excepturi illum quis, repellat est rerum
+                        temporibus expedita. Impedit dignissimos facere beatae ab quisquam numquam optio fugiat
+                        delectus repudiandae veritatis natus, tempore voluptates consequatur maxime reprehenderit
+                        corporis cum sapiente, sit tenetur cumque perferendis cupiditate! Debitis blanditiis
+                        doloremque quidem nostrum dignissimos tempore itaque corporis nesciunt, est sunt saepe esse
+                        minima suscipit nobis vel aperiam nihil autem, molestias corrupti. Sed dolorem quae
+                        doloribus minus laborum facilis numquam vel quibusdam. Iste nostrum suscipit, qui sit
+                        corrupti eligendi nemo similique vel voluptatum quas? Asperiores mollitia odit facere
+                        placeat, nisi dolor tenetur repellendus, iure iusto, pariatur eos accusantium voluptatum
+                        quod quam perspiciatis atque corrupti? Facere consequatur enim minima eius similique,
+                        expedita nihil assumenda, itaque accusantium, nisi eaque deleniti eveniet dignissimos!
+                        Voluptatibus, voluptates!</p>
+                </article>
+                <!-- blog image and content ends -->
+            </div>
+            <aside class="pastBlogs">
+                <div class="pastBlogImage">
+                    <img src="./assets/sidebar-image.jpg" alt="House on stilts at the beach">
                 </div>
-            </section>
-            <!-- blog post ends -->
-        </div>
-        <!-- flex blog aside ends -->
+                <!-- past blog images -->
+                <h4>Our mission</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem.</p>
+                <a href="#">Find out more</a>
+                <h4>Recent posts</h4>
+                <ul>
+                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
+                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
+                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
+                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
+                </ul>
+                <!-- ul ends -->
+            </aside>
+            <!-- past blogs ends -->
+        </section>
+        <!-- blog post ends -->
+        <section class="blogComments">
+            <!-- COMMENTS TEXT WILL GO HERE -->
+            <div class="formContainer">
+                <form action="" method="">
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" name="Name" id="commentName" required placeholder="Name">
+                    <label class="sr-only" for="commentEmail">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="comment" class="sr-only">Write Comment Here</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <button class="button">Post Comment</button>
+                </form>
+            </div>
+            <!-- form ends here -->
+        </section>
     </main>
 </body>
 
