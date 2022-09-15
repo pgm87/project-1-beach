@@ -420,6 +420,15 @@ body {
   color: #FAffFE;
   background-color: #063974;
   padding: 20px;
+  cursor: pointer;
+}
+.button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.button:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 input,
@@ -428,6 +437,35 @@ textarea {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+input {
+  border-style: none;
+  border-bottom: 2px solid #50e3c2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: inherit;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #50e3c2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #50e3c2;
+  border-radius: 0%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: inherit;
+}
+textarea:focus {
+  outline: none;
+  border: 2px solid #50e3c2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .navContainer {
@@ -752,4 +790,41 @@ footer {
 
 .pastBlogs {
   width: 20%;
+}
+
+.formContainer {
+  width: 60%;
+}
+.formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.formContainer form input {
+  width: 45%;
+  margin: 20px 0;
+}
+.formContainer form textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+.formContainer form button {
+  width: 100%;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.formContainer form button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.formContainer form button:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }

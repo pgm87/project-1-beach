@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+.formContainer {
+    width: 60%;
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        input {
+            width: 45%;
+            margin: 20px 0;
+        }
+
+        textarea {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(0.9)
+            }
+
+            &:focus {
+                transform: scale(0.9)
+            }
+        }
+
+
+    }
+}

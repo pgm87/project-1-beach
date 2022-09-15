@@ -17,6 +17,15 @@ body {
     color: $iceBlue;
     background-color: $twilightBlue;
     padding: 20px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(0.9)
+    }
+
+    &:focus {
+        transform: scale(0.9)
+    }
 
 }
 
@@ -25,4 +34,34 @@ textarea {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+input {
+    border-style: none;
+    border-bottom: 2px solid $greenCyan;
+    transition: 0.3s;
+    font-family: inherit;
+
+
+    &:focus {
+        outline: none;
+        border: 2px solid $greenCyan;
+        transform: scale(1.1);
+    }
+
+}
+
+textarea {
+    resize: none;
+    border: 2px solid $greenCyan;
+    border-radius: 0%;
+    transition: 0.3s;
+    font-family: inherit;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $greenCyan;
+        transform: scale(1.05);
+    }
 }
