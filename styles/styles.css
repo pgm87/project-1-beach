@@ -854,7 +854,7 @@ footer {
 .contactHeaderImage {
   background-image: url(../assets/contact-image-1.jpg);
   background-size: cover;
-  margin-bottom: 180px;
+  margin-bottom: 20px;
 }
 
 .contactHeader {
@@ -867,4 +867,39 @@ footer {
   line-height: 58px;
   letter-spacing: 9px;
   color: #FAffFE;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .formContainer {
+  padding: 2rem;
+  background-color: #FAffFE;
+  position: relative;
+  bottom: 180px;
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+}
+.contact .contactAddress .socialMediaEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact .contactAddress .socialMediaEmail li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.contact .contactAddress .socialMediaEmail li:last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
