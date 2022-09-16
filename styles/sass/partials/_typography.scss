@@ -95,6 +95,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 blockquote {
     font-family: $headingFont;
@@ -151,9 +152,31 @@ h4 {
     color: $twilightBlue;
 }
 
+h5 {
+    font-family: $bodyFont;
+    font-weight: bold;
+    font-size: calc(1.1 * $baseFont);
+    letter-spacing: 2px;
+    color: $twilightBlue;
+}
+
 h6 {
     font-family: $bodyFont;
     font-weight: lighter;
     font-size: $baseFont;
     color: $iceBlue;
+}
+
+form,
+input,
+textarea {
+    font-family: $bodyFont;
+    font-size: $baseFont;
+}
+
+.asideLink {
+    font-family: $bodyFont;
+    color: $black;
+    font-size: $baseFont;
+
 }

@@ -340,6 +340,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 blockquote {
   font-family: "PlayfairDisplaySC";
@@ -396,11 +397,32 @@ h4 {
   color: #063974;
 }
 
+h5 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #063974;
+}
+
 h6 {
   font-family: "Lato";
   font-weight: lighter;
   font-size: 1rem;
   color: #FAffFE;
+}
+
+form,
+input,
+textarea {
+  font-family: "Lato";
+  font-size: 1rem;
+}
+
+.asideLink {
+  font-family: "Lato";
+  color: #2c2c2c;
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -617,14 +639,12 @@ textarea:focus {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.linksToPagesSection ul li a img {
-  width: 20%;
+.linksToPagesSection ul li a i {
   margin-right: 20px;
-  position: relative;
-  top: 10px;
-  fill: #FAffFE;
+  padding: 15px;
+  color: #FAffFE;
   background-color: #50e3c2;
-  padding: 5px;
+  padding: 15px;
   border-radius: 50%;
 }
 
@@ -790,6 +810,15 @@ footer {
 
 .pastBlogs {
   width: 20%;
+  padding-left: 20px;
+}
+.pastBlogs ul li {
+  list-style: disc;
+  color: #50e3c2;
+}
+.pastBlogs ul li a {
+  font-family: "Lato";
+  color: #2c2c2c;
 }
 
 .formContainer {
@@ -843,7 +872,8 @@ footer {
           align-items: space-between;
 }
 .commentSection li .commentImageContainer {
-  width: 20%;
+  width: 30%;
+  margin-right: 30px;
 }
 .commentSection li .commentImageContainer img {
   width: 100%;
