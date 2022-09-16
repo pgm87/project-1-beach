@@ -828,3 +828,43 @@ footer {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
+
+.commentSection li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+.commentSection li .commentImageContainer {
+  width: 20%;
+}
+.commentSection li .commentImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contactHeaderImage {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  margin-bottom: 180px;
+}
+
+.contactHeader {
+  padding: 10rem 0;
+}
+.contactHeader .contactH2 {
+  font-size: 4rem;
+  font-family: "Lato";
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 9px;
+  color: #FAffFE;
+}

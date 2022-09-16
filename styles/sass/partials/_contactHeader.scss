@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.contactHeaderImage {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    margin-bottom: 180px;
+}
+
+.contactHeader {
+    padding: 10rem 0;
+
+
+    .contactH2 {
+        font-size: calc(4 * $baseFont);
+        font-family: $bodyFont;
+        font-weight: bold;
+        line-height: 58px;
+        letter-spacing: 9px;
+        color: $iceBlue;
+    }
+}
