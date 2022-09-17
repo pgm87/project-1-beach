@@ -91,6 +91,7 @@ a {
 
 }
 
+
 h1,
 h2,
 h3,
@@ -129,7 +130,7 @@ h2 {
 }
 
 h3 {
-    font-size: calc(2 * $baseFont);
+    font-size: calc(1.5 * $baseFont);
     font-family: $bodyFont;
     font-weight: bold;
     color: $spruce;
@@ -167,6 +168,10 @@ h6 {
     color: $iceBlue;
 }
 
+a {
+    font-family: $bodyFont;
+}
+
 form,
 input,
 textarea {
@@ -178,5 +183,16 @@ textarea {
     font-family: $bodyFont;
     color: $black;
     font-size: $baseFont;
+
+}
+
+.linkGreen {
+    color: $spruce;
+    font-weight: bold;
+}
+
+address {
+    font-family: $bodyFont;
+    font-style: normal;
 
 }
