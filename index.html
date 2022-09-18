@@ -11,21 +11,46 @@
 </head>
 
 <body>
-    <div class="homeBackgroundTop">
-        <nav>
-            <div class="navContainer wrapper">
-                <a class="logo">BEACHSTAYS</a>
-                <!-- h4 ends -->
-                <ul>
+
+    <nav class="navBar">
+        <div class="wrapper">
+
+            <a class="logo">BEACHSTAYS</a>
+            <!-- h4 ends -->
+            <button class="menuButton openButton">
+                <i class="fa-solid fa-bars" alt="open menu"></i>
+            </button>
+            <!-- menu icon  -->
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <!-- nav ul ends -->
+        </div>
+        <!-- wrapper ends -->
+
+        <!-- nav container wrapper ends -->
+        <div class="slideOutNav slideOutHidden">
+            <div class="buttonContainer">
+                <button class="menuButton closeButton">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="mainMenu">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="./blog.html">BLOG</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
-                <!-- nav ul ends -->
-            </div>
-        </nav>
-        <!-- nav ends -->
+            </nav>
+        </div>
+        <!-- div slideout nav ends -->
+    </nav>
+    <!-- nav ends -->
+    <div class="homeBackgroundTop">
         <header>
             <div class="headerBoxImage">
                 <img src="./assets/header-box.jpg" alt="Picture of Sunglasses on the Beach">
@@ -117,7 +142,6 @@
                     <!-- fourth content box ends -->
                 </li>
             </ul>
-
         </section>
         <!-- links to other pages section ends -->
         <section class="newsAndPlanning">
@@ -160,6 +184,10 @@
         <h6>Copyright &copy; 2022 Juno</h6>
     </footer>
     <!-- footer ends -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

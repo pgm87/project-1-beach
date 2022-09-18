@@ -4,20 +4,25 @@
     background-image: url(../assets/home-image-1.jpg);
     background-size: auto;
     margin-bottom: 180px;
-
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
     header {
-        display: flex;
+
         padding: 40px 0;
+        display: flex;
+
 
         .headerBoxImage {
-            width: 40%;
+            min-width: 40%;
             position: relative;
-            top: 90px;
+            top: 10rem;
+
 
             img {
                 width: 100%;
                 display: block;
+                height: auto;
             }
         }
 
@@ -32,7 +37,7 @@
             z-index: 10;
 
             position: relative;
-            top: 10rem;
+            top: 13rem;
             right: 6.5%;
 
 
