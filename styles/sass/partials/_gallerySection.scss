@@ -12,6 +12,14 @@
         .galleryImageContainer {
             flex-basis: 31%;
 
+            @media (max-width:$mobileWidth) {
+
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 75%;
+
+            }
+
             img {
                 width: 100%;
                 display: block;

@@ -1,14 +1,42 @@
+@use "variables" as *;
+
 .promotion {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 10px;
 
+    .promotionImage {
+        @media (max-width:$mobileWidth) {
+            min-height: 50vh;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+
+            @media (max-width:$mobileWidth) {
+                min-width: max-content;
+                position: relative;
+                right: 500px;
+
+            }
+        }
+    }
+
     .promotionContentBox {
         padding: 10% 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        h4 {
+            text-align: center;
+            align-self: center;
+            padding: 0;
+        }
+
+
 
         p {
             text-align: center;

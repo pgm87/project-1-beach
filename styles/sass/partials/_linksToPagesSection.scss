@@ -9,9 +9,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media (max-width:$mobileWidth) {
+            flex-direction: column;
+        }
+
         li {
             width: 45%;
 
+            @media (max-width:$mobileWidth) {
+                width: 100%;
+                align-items: center;
+            }
 
             h3 {
                 margin-bottom: 10px;
@@ -24,6 +32,11 @@
                 padding: 10px 10px;
                 transition: 0.3s;
                 border-radius: 5%;
+                text-align: center;
+
+                @media (max-width:$mobileWidth) {
+                    flex-direction: column;
+                }
 
                 &:hover {
                     background-color: $lightLightBlue;
@@ -42,6 +55,12 @@
                     background-color: $greenCyan;
                     padding: 15px;
                     border-radius: 50%;
+
+                    @media (max-width:$mobileWidth) {
+                        align-self: center;
+                    }
+
+
 
 
                 }

@@ -5,6 +5,10 @@
     padding: 20px 0;
     justify-content: space-between;
 
+    @media (max-width:$mobileWidth) {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
 
 
     .visitImageBox {
@@ -12,9 +16,17 @@
         margin-left: 10%;
         box-shadow: -20px 20px $greenCyan;
 
+        @media (max-width:$mobileWidth) {
+            box-shadow: none;
+            border: 5px solid $greenCyan;
+            margin: 0 auto;
+            margin-bottom: 5%;
+        }
+
         img {
             width: 100%;
             display: block;
+            height: auto;
         }
     }
 

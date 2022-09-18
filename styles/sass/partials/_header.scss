@@ -18,11 +18,18 @@
             position: relative;
             top: 10rem;
 
+            @media (max-width:$mobileWidth) {
+                display: none;
+
+            }
+
 
             img {
                 width: 100%;
                 display: block;
                 height: auto;
+
+
             }
         }
 
@@ -40,6 +47,15 @@
             top: 13rem;
             right: 6.5%;
 
+            @media (max-width:$mobileWidth) {
+                font-size: calc(2.5 * $baseFont);
+                text-align: center;
+                align-items: center;
+                top: 14rem;
+                left: 3%;
+
+            }
+
 
             .h1Span {
                 font-family: $bodyFont;
@@ -50,6 +66,12 @@
                 line-height: 2rem;
                 letter-spacing: 6.7px;
                 font-style: normal;
+
+                @media (max-width:$mobileWidth) {
+                    font-size: calc(2 * $baseFont);
+                    text-align: center;
+
+                }
             }
         }
     }

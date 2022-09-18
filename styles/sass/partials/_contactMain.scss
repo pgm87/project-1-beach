@@ -4,12 +4,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width:$mobileWidth) {
+        flex-direction: column;
+    }
+
     .formContainer {
         padding: 2rem;
         background-color: $iceBlue;
         position: relative;
         bottom: 180px;
         box-shadow: 20px 20px $greenCyan;
+
+        @media (max-width:$mobileWidth) {
+            bottom: 0;
+            box-shadow: none;
+        }
     }
 
     .contactAddress {
@@ -18,15 +27,33 @@
             justify-content: flex-start;
             flex-wrap: wrap;
 
+            @media (max-width:$mobileWidth) {
+
+                justify-content: center;
+            }
+
             li {
                 margin-right: 20px;
                 margin-bottom: 20px;
 
+                @media (max-width:$mobileWidth) {
+                    text-align: center;
+                }
+
                 &:last-child {
                     flex-basis: 100%;
+
+
+
                 }
             }
 
         }
+    }
+}
+
+li {
+    @media (max-width:$mobileWidth) {
+        text-align: center;
     }
 }

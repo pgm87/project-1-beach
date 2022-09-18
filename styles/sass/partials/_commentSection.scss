@@ -1,11 +1,22 @@
+@use "variables" as *;
+
 .commentSection {
+
+
     li {
 
         width: 60%;
         display: flex;
         flex-direction: row;
-        // flex-wrap: wrap;
         align-items: space-between;
+
+        @media (max-width:$mobileWidth) {
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
 
         .commentImageContainer {
@@ -17,6 +28,13 @@
                 height: auto;
                 display: block;
             }
+        }
+
+        .commentContainer {
+            @media (max-width:$mobileWidth) {
+                text-align: center;
+            }
+
         }
 
 
