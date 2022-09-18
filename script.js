@@ -4,28 +4,25 @@ $(document).ready()
 const $closeButton = $('.closeButton');
 const $openButton = $('.openButton');
 const $slideOutNav = $('.slideOutNav');
+const $nav = $('.navBar');
 
 $openButton.on('click', () => {
-    $slideOutNav.removeClass('slideOutHidden');
-    $slideOutNav.addClass('slideOutReveal');
+    $slideOutNav.removeClass('slideOutHidden').addClass('slideOutReveal');
+
 });
 
 $closeButton.on('click', () => {
-    $slideOutNav.addClass('slideOutHidden');
-    $slideOutNav.removeClass('slideOutReveal');
+    $slideOutNav.addClass('slideOutHidden').removeClass('slideOutReveal');
+
 });
 
-const scrollDetect = () => {
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
+$(document).scroll(function () {
 
-        if (scroll >= 300) {
-            console.log('HI');
-        } else {
-            console.log('NON');
-        }
-    });
+    if ($(document).scrollTop() >= 150) {
+        $nav.removeClass('heightNone');
+    }
+    else {
+        $nav.addClass('heightNone');
+    }
+})
 
-}
-
-scrollDetect();

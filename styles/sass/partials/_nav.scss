@@ -4,9 +4,8 @@
 .navBar {
     position: sticky;
     top: 0;
-    height: 0;
     z-index: 100;
-
+    background: $twilightBlue;
 
     .wrapper {
         display: flex;
@@ -122,4 +121,8 @@
     @media (max-width:$mobileWidth) {
         visibility: visible;
     }
+}
+
+.heightNone {
+    height: 0;
 }

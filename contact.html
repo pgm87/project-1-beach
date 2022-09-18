@@ -11,21 +11,46 @@
 </head>
 
 <body>
-    <div class="contactHeaderImage">
-        <nav>
-            <div class="navContainer wrapper">
-                <a class="logo">BEACHSTAYS</a>
-                <!-- h4 ends -->
-                <ul>
+    <nav class="navBar">
+        <div class="wrapper">
+
+            <a class="logo">BEACHSTAYS</a>
+            <!-- h4 ends -->
+            <button class="menuButton openButton">
+                <i class="fa-solid fa-bars" alt="open menu"></i>
+            </button>
+            <!-- menu icon  -->
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <!-- nav ul ends -->
+        </div>
+        <!-- wrapper ends -->
+
+        <!-- nav container wrapper ends -->
+        <div class="slideOutNav slideOutHidden">
+            <div class="buttonContainer">
+                <button class="menuButton closeButton">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="mainMenu">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="./blog.html">BLOG</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
-                <!-- nav ul ends -->
-            </div>
-        </nav>
-        </nav>
+            </nav>
+        </div>
+        <!-- div slideout nav ends -->
+    </nav>
+    <!-- nav ends -->
+    <div class="contactHeaderImage">
+
         <!-- nav ends -->
         <header class="contactHeader">
             <h2 class="contactH2 wrapper">Get in Touch</h2>
