@@ -656,14 +656,12 @@ textarea:focus {
   height: 0;
 }
 
-.homeBackgroundTop {
+.homeBackgroundTop header {
   background-image: url(../assets/home-image-1.jpg);
-  background-size: auto;
+  background-size: cover;
   margin-bottom: 180px;
   background-repeat: no-repeat;
   min-height: 100vh;
-}
-.homeBackgroundTop header {
   padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
