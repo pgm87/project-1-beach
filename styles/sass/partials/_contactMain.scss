@@ -9,6 +9,7 @@
     }
 
     .formContainer {
+        width: 70%;
         padding: 2rem;
         background-color: $iceBlue;
         position: relative;
@@ -18,10 +19,18 @@
         @media (max-width:$mobileWidth) {
             bottom: 0;
             box-shadow: none;
+            width: 100%;
         }
     }
 
     .contactAddress {
+        width: 25%;
+
+        @media (max-width:$mobileWidth) {
+
+            width: 100%;
+        }
+
         .socialMediaEmail {
             display: flex;
             justify-content: flex-start;
@@ -42,7 +51,7 @@
 
                 &:last-child {
                     flex-basis: 100%;
-
+                    font-weight: bold;
 
 
                 }
