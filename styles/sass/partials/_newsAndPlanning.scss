@@ -19,7 +19,7 @@
 
     .image1 {
         position: relative;
-        bottom: 60px;
+        top: -60px;
         box-shadow: 20px 20px $greenCyan;
 
         @media (max-width:$mobileWidth) {

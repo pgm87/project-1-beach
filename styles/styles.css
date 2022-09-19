@@ -676,7 +676,7 @@ textarea:focus {
 }
 .homeBackgroundTop header .headerBoxImage {
   position: absolute;
-  top: 8rem;
+  bottom: -40px;
   left: 0;
 }
 @media (max-width: 512px) {
@@ -704,6 +704,9 @@ textarea:focus {
   font-style: italic;
   color: #063974;
   z-index: 10;
+  position: absolute;
+  bottom: 210px;
+  left: 500px;
 }
 @media (max-width: 512px) {
   .homeBackgroundTop header h1 {
@@ -719,10 +722,10 @@ textarea:focus {
 .homeBackgroundTop header h1 .h1Span {
   font-family: "Lato";
   color: #0c5f4c;
-  font-size: 2.2rem;
+  font-size: 3rem;
   display: inline-block;
   font-weight: bold;
-  line-height: 2rem;
+  line-height: 58px;
   letter-spacing: 6.7px;
   font-style: normal;
 }
@@ -967,7 +970,7 @@ textarea:focus {
 }
 .newsAndPlanning .image1 {
   position: relative;
-  bottom: 60px;
+  top: -60px;
   -webkit-box-shadow: 20px 20px #50e3c2;
           box-shadow: 20px 20px #50e3c2;
 }
@@ -1086,7 +1089,10 @@ img {
   margin-bottom: 10px;
 }
 .promotion .promotionImageBox {
-  max-width: 100%;
+  background-image: url(../assets/banner-image.jpg);
+  background-image: cover;
+  background-repeat: none;
+  min-height: 50vh;
 }
 @media (max-width: 512px) {
   .promotion .promotionImageBox {

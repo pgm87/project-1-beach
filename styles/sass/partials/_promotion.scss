@@ -7,7 +7,11 @@
     margin-bottom: 10px;
 
     .promotionImageBox {
-        max-width: 100%;
+
+        background-image: url(../assets/banner-image.jpg);
+        background-image: cover;
+        background-repeat: none;
+        min-height: 50vh;
 
         @media (max-width:$mobileWidth) {
             min-height: 50vh;
