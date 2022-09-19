@@ -262,7 +262,7 @@ html {
 
 @font-face {
   font-family: "Lato";
-  src: url(../fonts/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Black.ttf);
   font-weight: normal;
 }
 @font-face {
@@ -387,6 +387,7 @@ p {
   font-family: "Lato";
   line-height: 32px;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 h4 {
@@ -1085,6 +1086,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10px;
+}
+.promotion .promotionImage {
+  max-width: 100vw;
 }
 @media (max-width: 512px) {
   .promotion .promotionImage {

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Lato";
-    src: url(../fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Black.ttf);
     font-weight: normal;
 }
 
@@ -143,6 +143,7 @@ p {
     font-family: $bodyFont;
     line-height: 32px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 h4 {
