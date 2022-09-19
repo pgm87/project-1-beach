@@ -672,11 +672,12 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 .homeBackgroundTop header .headerBoxImage {
-  min-width: 40%;
-  position: relative;
-  top: 10rem;
+  position: absolute;
+  top: 8rem;
+  left: 0;
 }
 @media (max-width: 512px) {
   .homeBackgroundTop header .headerBoxImage {
@@ -687,7 +688,7 @@ textarea:focus {
   width: 100%;
   display: block;
   height: auto;
-  max-width: 900px;
+  max-width: 600px;
 }
 .homeBackgroundTop header h1 {
   display: -webkit-box;
