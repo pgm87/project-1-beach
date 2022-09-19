@@ -9,6 +9,15 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width:$mobileWidth) {
+
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+
+        }
+
         .galleryImageContainer {
             flex-basis: 31%;
 
@@ -17,6 +26,7 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 width: 75%;
+                margin-bottom: 30px;
 
             }
 

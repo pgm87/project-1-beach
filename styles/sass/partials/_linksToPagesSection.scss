@@ -23,6 +23,11 @@
 
             h3 {
                 margin-bottom: 10px;
+                text-align: left;
+
+                @media (max-width:$mobileWidth) {
+                    text-align: center;
+                }
             }
 
             a {
@@ -32,10 +37,11 @@
                 padding: 10px 10px;
                 transition: 0.3s;
                 border-radius: 5%;
-                text-align: center;
+
 
                 @media (max-width:$mobileWidth) {
                     flex-direction: column;
+                    text-align: center;
                 }
 
                 &:hover {

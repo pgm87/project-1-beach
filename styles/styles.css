@@ -784,6 +784,20 @@ textarea:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 512px) {
+  .homeGallery .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .homeGallery .galleryContainer .galleryImageContainer {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
@@ -797,6 +811,7 @@ textarea:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 75%;
+    margin-bottom: 30px;
   }
 }
 .homeGallery .galleryContainer .galleryImageContainer img {
@@ -840,6 +855,12 @@ textarea:focus {
 }
 .linksToPagesSection ul li h3 {
   margin-bottom: 10px;
+  text-align: left;
+}
+@media (max-width: 512px) {
+  .linksToPagesSection ul li h3 {
+    text-align: center;
+  }
 }
 .linksToPagesSection ul li a {
   display: -webkit-box;
@@ -852,7 +873,6 @@ textarea:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5%;
-  text-align: center;
 }
 @media (max-width: 512px) {
   .linksToPagesSection ul li a {
@@ -860,6 +880,7 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 .linksToPagesSection ul li a:hover {
