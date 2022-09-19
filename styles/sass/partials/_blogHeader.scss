@@ -4,6 +4,10 @@
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width:$mobileWidth) {
+        height: 100vh;
+    }
 }
 
 .blogHeader {

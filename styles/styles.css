@@ -738,7 +738,7 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 10px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -748,11 +748,44 @@ textarea:focus {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.visitSection .visitContentBox {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 512px) {
+  .visitSection .visitContentBox {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.visitSection .visitContentBox .button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+@media (max-width: 512px) {
+  .visitSection .visitContentBox .button {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 .visitSection .visitImageBox {
-  min-width: 28%;
-  margin-left: 10%;
+  width: 28%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 5%;
   -webkit-box-shadow: -20px 20px #50e3c2;
           box-shadow: -20px 20px #50e3c2;
 }
@@ -763,6 +796,7 @@ textarea:focus {
     border: 5px solid #50e3c2;
     margin: 0 auto;
     margin-bottom: 5%;
+    width: 80%;
   }
 }
 .visitSection .visitImageBox img {
@@ -773,7 +807,7 @@ textarea:focus {
 
 .homeGallery {
   background-color: #d2f9f1;
-  margin-top: 80px;
+  margin-top: 30px;
   padding: 100px 0;
 }
 .homeGallery .galleryContainer {
@@ -1110,6 +1144,11 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 512px) {
+  .blogBackgroundTop {
+    height: 100vh;
+  }
+}
 
 .blogHeader {
   padding: 10rem 0;
@@ -1161,7 +1200,6 @@ footer {
     border-right: 0;
     border-bottom: 0;
     padding-right: 0;
-    background-color: #d2f9f1;
   }
 }
 .blogPost .blogImageAndPost .mainBlogImage {
@@ -1177,6 +1215,8 @@ footer {
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
+    border-top: 10px solid #50e3c2;
+    border-bottom: 10px solid #50e3c2;
   }
 }
 .blogPost .blogImageAndPost .mainBlogImage img {
@@ -1191,8 +1231,11 @@ footer {
 }
 @media (max-width: 512px) {
   .blogPost .blogImageAndPost .blogContent {
-    text-align: center;
-    background-color: #d2f9f1;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 5%;
+    border-right: 10px solid #50e3c2;
+    border-bottom: 10px solid #50e3c2;
   }
 }
 .blogPost .blogImageAndPost .blogContent .subtitle {
@@ -1211,11 +1254,24 @@ footer {
   padding-left: 20px;
   margin-top: 100px;
 }
+.pastBlogs a:hover {
+  border-bottom: 2px solid #0c5f4c;
+}
+.pastBlogs a:hover {
+  border-bottom: 2px solid #0c5f4c;
+}
 @media (max-width: 512px) {
   .pastBlogs {
     width: 100%;
     padding-left: 0;
     text-align: center;
+  }
+}
+@media (max-width: 512px) {
+  .pastBlogs .pastBlogImage {
+    width: 40%;
+    padding-left: 0;
+    margin: 20px auto;
   }
 }
 .pastBlogs h4 {
@@ -1277,6 +1333,17 @@ footer {
           transform: scale(0.9);
 }
 
+.commentSection h4 {
+  color: #2c2c2c;
+  margin: 3rem 0;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+}
+@media (max-width: 512px) {
+  .commentSection h4 {
+    text-align: center;
+  }
+}
 .commentSection li {
   width: 60%;
   display: -webkit-box;
@@ -1289,6 +1356,7 @@ footer {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
+  margin: 30px 0;
 }
 @media (max-width: 512px) {
   .commentSection li {
@@ -1305,11 +1373,21 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border: 5px solid #063974;
+    margin: 10px 0;
+    border-radius: 15%;
   }
 }
 .commentSection li .commentImageContainer {
   width: 30%;
   margin-right: 30px;
+}
+@media (max-width: 512px) {
+  .commentSection li .commentImageContainer {
+    width: 25%;
+    margin: 0 auto;
+    margin: 30px 0;
+  }
 }
 .commentSection li .commentImageContainer img {
   width: 100%;
@@ -1374,7 +1452,7 @@ footer {
   }
 }
 .contact .contactAddress {
-  width: 25%;
+  width: 20%;
 }
 @media (max-width: 512px) {
   .contact .contactAddress {
