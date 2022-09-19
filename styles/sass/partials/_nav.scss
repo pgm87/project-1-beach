@@ -17,7 +17,7 @@
             display: flex;
 
             @media (max-width:$mobileWidth) {
-                visibility: hidden;
+                display: none;
                 flex-basis: 0;
             }
 
