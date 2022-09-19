@@ -11,6 +11,8 @@
         min-height: 100vh;
         padding: 40px 0;
         display: flex;
+        align-items: left;
+        justify-content: center;
 
 
         .headerBoxImage {
@@ -28,6 +30,7 @@
                 width: 100%;
                 display: block;
                 height: auto;
+                max-width: 900px;
 
 
             }
@@ -43,9 +46,7 @@
             color: $twilightBlue;
             z-index: 10;
 
-            position: relative;
-            top: 13rem;
-            right: 6.5%;
+
 
             @media (max-width:$mobileWidth) {
                 font-size: calc(2.5 * $baseFont);

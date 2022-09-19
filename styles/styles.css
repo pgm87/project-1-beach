@@ -666,6 +666,12 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .homeBackgroundTop header .headerBoxImage {
   min-width: 40%;
@@ -681,6 +687,7 @@ textarea:focus {
   width: 100%;
   display: block;
   height: auto;
+  max-width: 900px;
 }
 .homeBackgroundTop header h1 {
   display: -webkit-box;
@@ -696,9 +703,6 @@ textarea:focus {
   font-style: italic;
   color: #063974;
   z-index: 10;
-  position: relative;
-  top: 13rem;
-  right: 6.5%;
 }
 @media (max-width: 512px) {
   .homeBackgroundTop header h1 {
