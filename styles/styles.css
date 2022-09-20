@@ -1148,7 +1148,7 @@ img {
 }
 .promotion .promotionImageBox {
   background-image: url(../assets/banner-image.jpg);
-  background-image: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 50vh;
 }
