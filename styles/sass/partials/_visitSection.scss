@@ -7,7 +7,7 @@
     justify-content: space-between;
 
 
-    @media (max-width:$mobileWidth) {
+    @media (max-width:$tabletLandscape) {
         flex-wrap: wrap-reverse;
         text-align: center;
         flex-direction: column-reverse;
@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletLandscape) {
 
             width: 100%;
             margin-bottom: 5%;
@@ -28,7 +28,7 @@
         .button {
             align-self: flex-start;
 
-            @media (max-width:$mobileWidth) {
+            @media (max-width:$tabletLandscape) {
 
                 align-self: center;
             }
@@ -43,6 +43,19 @@
         height: fit-content;
         margin-left: 5%;
 
+
+        @media (max-width:$tabletLandscape) {
+            box-shadow: none;
+            border: 5px solid $greenCyan;
+            margin: 0 auto;
+            margin-bottom: 5%;
+            width: 50%;
+        }
+
+        @media (max-width:$tabletRegular) {
+
+            width: 80%;
+        }
 
         @media (max-width:$mobileWidth) {
             box-shadow: none;
@@ -59,9 +72,10 @@
             max-width: 275px;
             box-shadow: -20px 20px $greenCyan;
 
-            @media (max-width:$mobileWidth) {
+            @media (max-width:$tabletLandscape) {
                 box-shadow: none;
                 max-width: 100%;
+
             }
         }
     }

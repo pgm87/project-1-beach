@@ -3,7 +3,7 @@
 
 
 
-header {
+.headerMain {
     background-image: url(../assets/home-image-1.jpg);
     background-size: cover;
     margin-bottom: 180px;
@@ -60,8 +60,14 @@ header {
             text-align: center;
             align-items: center;
             top: 12rem;
-            left: 25%;
+
             font-size: calc(3.5* $baseFont);
+        }
+
+        @media (max-width:$tabletRegular) {
+
+            left: 15%;
+            font-size: calc(3* $baseFont);
         }
 
 

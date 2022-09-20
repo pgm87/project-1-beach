@@ -9,14 +9,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletRegular) {
             flex-direction: column;
         }
 
         li {
             width: 45%;
 
-            @media (max-width:$mobileWidth) {
+            @media (max-width:$tabletRegular) {
                 width: 100%;
                 align-items: center;
             }
@@ -25,7 +25,7 @@
                 margin-bottom: 10px;
                 text-align: left;
 
-                @media (max-width:$mobileWidth) {
+                @media (max-width:$tabletRegular) {
                     text-align: center;
                 }
             }
@@ -39,7 +39,7 @@
                 border-radius: 5%;
 
 
-                @media (max-width:$mobileWidth) {
+                @media (max-width:$tabletRegular) {
                     flex-direction: column;
                     text-align: center;
                 }
@@ -62,7 +62,7 @@
                     padding: 15px;
                     border-radius: 50%;
 
-                    @media (max-width:$mobileWidth) {
+                    @media (max-width:$tabletRegular) {
                         align-self: center;
                     }
 

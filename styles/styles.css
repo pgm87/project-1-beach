@@ -656,7 +656,7 @@ textarea:focus {
   height: 0;
 }
 
-header {
+.headerMain {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
   margin-bottom: 180px;
@@ -673,23 +673,23 @@ header {
           justify-content: center;
   position: relative;
 }
-header .headerBoxImage {
+.headerMain .headerBoxImage {
   position: absolute;
   bottom: -80px;
   left: 0;
 }
 @media (max-width: 1024px) {
-  header .headerBoxImage {
+  .headerMain .headerBoxImage {
     display: none;
   }
 }
-header .headerBoxImage img {
+.headerMain .headerBoxImage img {
   width: 100%;
   display: block;
   height: auto;
   max-width: 500px;
 }
-header h1 {
+.headerMain h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,31 +708,36 @@ header h1 {
   left: 400px;
 }
 @media (max-width: 1194px) {
-  header h1 {
+  .headerMain h1 {
     bottom: 125px;
     left: 15%;
     margin-right: 10px;
   }
 }
 @media (max-width: 1024px) {
-  header h1 {
+  .headerMain h1 {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     top: 12rem;
-    left: 25%;
     font-size: 3.5rem;
   }
 }
+@media (max-width: 768px) {
+  .headerMain h1 {
+    left: 15%;
+    font-size: 3rem;
+  }
+}
 @media (max-width: 512px) {
-  header h1 {
+  .headerMain h1 {
     font-size: 2rem;
     top: 12rem;
     left: 15%;
   }
 }
-header h1 .h1Span {
+.headerMain h1 .h1Span {
   font-family: "Lato";
   color: #0c5f4c;
   font-size: 3rem;
@@ -743,7 +748,7 @@ header h1 .h1Span {
   font-style: normal;
 }
 @media (max-width: 512px) {
-  header h1 .h1Span {
+  .headerMain h1 .h1Span {
     font-size: 2rem;
     text-align: center;
   }
@@ -759,7 +764,7 @@ header h1 .h1Span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 512px) {
+@media (max-width: 1024px) {
   .visitSection {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -780,7 +785,7 @@ header h1 .h1Span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (max-width: 512px) {
+@media (max-width: 1024px) {
   .visitSection .visitContentBox {
     width: 100%;
     margin-bottom: 5%;
@@ -790,7 +795,7 @@ header h1 .h1Span {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-@media (max-width: 512px) {
+@media (max-width: 1024px) {
   .visitSection .visitContentBox .button {
     -ms-flex-item-align: center;
         align-self: center;
@@ -802,6 +807,21 @@ header h1 .h1Span {
   height: -moz-fit-content;
   height: fit-content;
   margin-left: 5%;
+}
+@media (max-width: 1024px) {
+  .visitSection .visitImageBox {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 5px solid #50e3c2;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .visitSection .visitImageBox {
+    width: 80%;
+  }
 }
 @media (max-width: 512px) {
   .visitSection .visitImageBox {
@@ -821,7 +841,7 @@ header h1 .h1Span {
   -webkit-box-shadow: -20px 20px #50e3c2;
           box-shadow: -20px 20px #50e3c2;
 }
-@media (max-width: 512px) {
+@media (max-width: 1024px) {
   .visitSection .visitImageBox img {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -892,7 +912,7 @@ header h1 .h1Span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .linksToPagesSection ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -903,7 +923,7 @@ header h1 .h1Span {
 .linksToPagesSection ul li {
   width: 45%;
 }
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .linksToPagesSection ul li {
     width: 100%;
     -webkit-box-align: center;
@@ -915,7 +935,7 @@ header h1 .h1Span {
   margin-bottom: 10px;
   text-align: left;
 }
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .linksToPagesSection ul li h3 {
     text-align: center;
   }
@@ -932,7 +952,7 @@ header h1 .h1Span {
   transition: 0.3s;
   border-radius: 5%;
 }
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .linksToPagesSection ul li a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -957,7 +977,7 @@ header h1 .h1Span {
   padding: 15px;
   border-radius: 50%;
 }
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .linksToPagesSection ul li a i {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1185,6 +1205,11 @@ footer {
 
 .blogHeader {
   padding: 10rem 0;
+}
+@media (max-width: 512px) {
+  .blogHeader {
+    height: 100vh;
+  }
 }
 .blogHeader .blogH2 {
   font-size: 4rem;
