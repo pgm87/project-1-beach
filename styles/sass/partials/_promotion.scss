@@ -10,18 +10,15 @@
 
         background-image: url(../assets/banner-image.jpg);
         background-image: cover;
-        background-repeat: none;
+        background-repeat: no-repeat;
         min-height: 50vh;
 
         @media (max-width:$mobileWidth) {
             min-height: 50vh;
-            max-width: 100%;
-        }
-
-        .promotionImage {
-            object-fit: fill;
 
         }
+
+
     }
 
     .promotionContentBox {

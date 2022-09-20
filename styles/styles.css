@@ -656,13 +656,12 @@ textarea:focus {
   height: 0;
 }
 
-.homeBackgroundTop header {
+header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
   margin-bottom: 180px;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,23 +673,23 @@ textarea:focus {
           justify-content: center;
   position: relative;
 }
-.homeBackgroundTop header .headerBoxImage {
+header .headerBoxImage {
   position: absolute;
-  bottom: -40px;
+  bottom: -80px;
   left: 0;
 }
-@media (max-width: 512px) {
-  .homeBackgroundTop header .headerBoxImage {
+@media (max-width: 1024px) {
+  header .headerBoxImage {
     display: none;
   }
 }
-.homeBackgroundTop header .headerBoxImage img {
+header .headerBoxImage img {
   width: 100%;
   display: block;
   height: auto;
-  max-width: 600px;
+  max-width: 500px;
 }
-.homeBackgroundTop header h1 {
+header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,21 +704,35 @@ textarea:focus {
   color: #063974;
   z-index: 10;
   position: absolute;
-  bottom: 210px;
-  left: 500px;
+  bottom: 125px;
+  left: 400px;
 }
-@media (max-width: 512px) {
-  .homeBackgroundTop header h1 {
-    font-size: 2.5rem;
+@media (max-width: 1194px) {
+  header h1 {
+    bottom: 125px;
+    left: 15%;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  header h1 {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 14rem;
-    left: 3%;
+    top: 12rem;
+    left: 25%;
+    font-size: 3.5rem;
   }
 }
-.homeBackgroundTop header h1 .h1Span {
+@media (max-width: 512px) {
+  header h1 {
+    font-size: 2rem;
+    top: 12rem;
+    left: 15%;
+  }
+}
+header h1 .h1Span {
   font-family: "Lato";
   color: #0c5f4c;
   font-size: 3rem;
@@ -730,7 +743,7 @@ textarea:focus {
   font-style: normal;
 }
 @media (max-width: 512px) {
-  .homeBackgroundTop header h1 .h1Span {
+  header h1 .h1Span {
     font-size: 2rem;
     text-align: center;
   }
@@ -740,7 +753,8 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 30px 0;
+  padding-bottom: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -788,8 +802,6 @@ textarea:focus {
   height: -moz-fit-content;
   height: fit-content;
   margin-left: 5%;
-  -webkit-box-shadow: -20px 20px #50e3c2;
-          box-shadow: -20px 20px #50e3c2;
 }
 @media (max-width: 512px) {
   .visitSection .visitImageBox {
@@ -805,6 +817,16 @@ textarea:focus {
   width: 100%;
   display: block;
   height: auto;
+  max-width: 275px;
+  -webkit-box-shadow: -20px 20px #50e3c2;
+          box-shadow: -20px 20px #50e3c2;
+}
+@media (max-width: 512px) {
+  .visitSection .visitImageBox img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    max-width: 100%;
+  }
 }
 
 .homeGallery {
@@ -965,14 +987,11 @@ textarea:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 20px;
   }
 }
 .newsAndPlanning .image1 {
   position: relative;
   top: -60px;
-  -webkit-box-shadow: 20px 20px #50e3c2;
-          box-shadow: 20px 20px #50e3c2;
 }
 @media (max-width: 512px) {
   .newsAndPlanning .image1 {
@@ -980,6 +999,15 @@ textarea:focus {
         -ms-flex-order: 1;
             order: 1;
     bottom: 0;
+  }
+}
+.newsAndPlanning .image1 img {
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+  max-width: 600px;
+}
+@media (max-width: 512px) {
+  .newsAndPlanning .image1 img {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -987,8 +1015,7 @@ textarea:focus {
 .newsAndPlanning .image2 {
   position: relative;
   top: 50px;
-  -webkit-box-shadow: -20px 20px #50e3c2;
-          box-shadow: -20px 20px #50e3c2;
+  right: 0;
 }
 @media (max-width: 512px) {
   .newsAndPlanning .image2 {
@@ -1000,13 +1027,24 @@ textarea:focus {
             box-shadow: none;
   }
 }
+.newsAndPlanning .image2 img {
+  -webkit-box-shadow: -20px 20px #50e3c2;
+          box-shadow: -20px 20px #50e3c2;
+  max-width: 600px;
+}
+@media (max-width: 512px) {
+  .newsAndPlanning .image2 img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 .newsAndPlanning .newsContentBox {
   width: 42%;
 }
 @media (max-width: 512px) {
   .newsAndPlanning .newsContentBox {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 .newsAndPlanning .box1 {
@@ -1091,18 +1129,13 @@ img {
 .promotion .promotionImageBox {
   background-image: url(../assets/banner-image.jpg);
   background-image: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   min-height: 50vh;
 }
 @media (max-width: 512px) {
   .promotion .promotionImageBox {
     min-height: 50vh;
-    max-width: 100%;
   }
-}
-.promotion .promotionImageBox .promotionImage {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 .promotion .promotionContentBox {
   padding: 10% 10%;
@@ -1223,6 +1256,7 @@ footer {
   width: 100%;
   display: block;
   height: auto;
+  max-width: 1600px;
 }
 .blogPost .blogImageAndPost .blogContent {
   text-align: left;

@@ -13,31 +13,52 @@
         @media (max-width:$mobileWidth) {
             width: 100%;
             align-items: center;
-            margin-bottom: 20px;
+
         }
     }
 
     .image1 {
         position: relative;
         top: -60px;
-        box-shadow: 20px 20px $greenCyan;
+
 
         @media (max-width:$mobileWidth) {
             order: 1;
             bottom: 0;
-            box-shadow: none;
+
+        }
+
+        img {
+            box-shadow: 20px 20px $greenCyan;
+            max-width: 600px;
+
+            @media (max-width:$mobileWidth) {
+
+                box-shadow: none;
+            }
         }
     }
 
     .image2 {
         position: relative;
         top: 50px;
-        box-shadow: -20px 20px $greenCyan;
+        right: 0;
+
 
         @media (max-width:$mobileWidth) {
             order: 3;
             top: 0;
             box-shadow: none;
+        }
+
+        img {
+            box-shadow: -20px 20px $greenCyan;
+            max-width: 600px;
+
+            @media (max-width:$mobileWidth) {
+
+                box-shadow: none;
+            }
         }
     }
 
@@ -47,7 +68,7 @@
 
         @media (max-width:$mobileWidth) {
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
     }
 
