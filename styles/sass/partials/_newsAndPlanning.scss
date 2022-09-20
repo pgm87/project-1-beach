@@ -8,10 +8,10 @@
     background-color: $lightLightBlue;
 
     .newsImages {
-        width: 42%;
+        max-width: 42%;
 
-        @media (max-width:$mobileWidth) {
-            width: 100%;
+        @media (max-width:$tabletLandscape) {
+            max-width: 60%;
             align-items: center;
 
         }
@@ -22,18 +22,17 @@
         top: -60px;
 
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletLandscape) {
             order: 1;
-            bottom: 0;
+            top: 0;
 
         }
 
         img {
             box-shadow: 20px 20px $greenCyan;
-            max-width: 600px;
+            max-width: 550px;
 
             @media (max-width:$mobileWidth) {
-
                 box-shadow: none;
             }
         }
@@ -45,19 +44,22 @@
         right: 0;
 
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletLandscape) {
             order: 3;
             top: 0;
+            margin-left: auto;
+            max-width: 550px;
             box-shadow: none;
         }
 
         img {
             box-shadow: -20px 20px $greenCyan;
-            max-width: 600px;
+            max-width: 550px;
 
             @media (max-width:$mobileWidth) {
 
                 box-shadow: none;
+
             }
         }
     }
@@ -66,9 +68,10 @@
     .newsContentBox {
         width: 42%;
 
-        @media (max-width:$mobileWidth) {
+
+        @media (max-width:$tabletLandscape) {
             width: 100%;
-            margin-bottom: 40px;
+
         }
     }
 
@@ -76,13 +79,13 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 5% 5% 5% 0%;
+        padding: 5% 7% 5% 0%;
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletLandscape) {
             width: 100%;
             text-align: center;
             align-items: center;
-            padding: 0;
+            padding: 10% 5%;
             order: 2;
         }
     }
@@ -90,21 +93,21 @@
     .box2 {
         display: flex;
         flex-direction: column;
-        padding: 5% 0 5% 5%;
+        padding: 5% 0 5% 7%;
         align-items: flex-end;
 
-        @media (max-width:$mobileWidth) {
+        @media (max-width:$tabletLandscape) {
             width: 100%;
             text-align: center;
             align-items: center;
-            padding: 0;
+            padding: 10% 5%;
             order: 4;
         }
 
         p {
             text-align: right;
 
-            @media (max-width:$mobileWidth) {
+            @media (max-width:$tabletLandscape) {
                 text-align: center;
                 align-self: center;
 
@@ -114,10 +117,4 @@
     }
 
 
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
 }

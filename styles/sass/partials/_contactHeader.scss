@@ -3,6 +3,7 @@
 .contactHeaderImage {
     background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 20px;
 }
 
@@ -14,8 +15,8 @@
         font-size: calc(4 * $baseFont);
         font-family: $bodyFont;
         font-weight: bold;
-        line-height: 58px;
         letter-spacing: 9px;
+        line-height: 60px;
         color: $iceBlue;
     }
 }

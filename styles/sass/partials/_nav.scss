@@ -16,7 +16,7 @@
         ul {
             display: flex;
 
-            @media (max-width:$mobileWidth) {
+            @media (max-width:$tabletRegular) {
                 display: none;
                 flex-basis: 0;
             }
@@ -115,7 +115,7 @@
     top: 10px;
     right: 5%;
 
-    @media (max-width:$mobileWidth) {
+    @media (max-width:$tabletRegular) {
         visibility: visible;
     }
 }

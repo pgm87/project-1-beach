@@ -3,7 +3,9 @@
 .formContainer {
     width: 60%;
 
-    @media (max-width:$mobileWidth) {
+
+
+    @media (max-width:$tabletRegular) {
         width: 100%;
     }
 
@@ -11,6 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        font-weight: light;
 
         input {
             width: 45%;

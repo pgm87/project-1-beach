@@ -1,6 +1,8 @@
 @use "variables" as *;
 
 .commentSection {
+    padding-top: 60px;
+
     h4 {
         color: $black;
         margin: 3rem 0;
@@ -21,6 +23,12 @@
         align-items: space-between;
         margin: 30px 0;
 
+        @media (max-width:$tabletLandscape) {
+            width: 100%;
+            padding-top: 5px;
+            border-top: 3px solid $twilightBlue;
+        }
+
         @media (max-width:$mobileWidth) {
             width: 100%;
             flex-wrap: wrap;
@@ -30,6 +38,7 @@
             border: 5px solid $twilightBlue;
             margin: 10px 0;
             border-radius: 15%;
+            padding: 5px;
         }
 
 
@@ -37,10 +46,16 @@
             width: 30%;
             margin-right: 30px;
 
+            @media (max-width:$tabletLandscape) {
+                min-width: 100px;
+                margin-right: 35px;
+
+
+            }
+
             @media (max-width:$mobileWidth) {
                 width: 25%;
-                margin: 0 auto;
-                margin: 30px 0;
+                margin: 30px auto;
 
             }
 
