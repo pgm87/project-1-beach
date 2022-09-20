@@ -1046,6 +1046,7 @@ textarea:focus {
   position: relative;
   top: 50px;
   right: 0;
+  max-width: 100%;
 }
 @media (max-width: 1024px) {
   .newsAndPlanning .image2 {
