@@ -66,14 +66,15 @@
 
         @media (max-width:$tabletRegular) {
 
-            left: 15%;
+            left: 13%;
+            top: 13rem;
             font-size: calc(3* $baseFont);
         }
 
 
         @media (max-width:$mobileWidth) {
             font-size: calc(2 * $baseFont);
-            top: 12rem;
+            top: 13rem;
             left: 15%;
         }
 
