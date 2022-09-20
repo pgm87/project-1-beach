@@ -544,7 +544,7 @@ textarea:focus {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .navBar .wrapper ul {
     display: none;
     -ms-flex-preferred-size: 0;
@@ -646,7 +646,7 @@ textarea:focus {
   top: 10px;
   right: 5%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .openButton {
     visibility: visible;
   }
@@ -724,7 +724,7 @@ textarea:focus {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .headerMain h1 {
     left: 13%;
     top: 13rem;
@@ -819,7 +819,7 @@ textarea:focus {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .visitSection .visitImageBox {
     width: 80%;
   }
@@ -913,7 +913,7 @@ textarea:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .linksToPagesSection ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -924,7 +924,7 @@ textarea:focus {
 .linksToPagesSection ul li {
   width: 45%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .linksToPagesSection ul li {
     width: 100%;
     -webkit-box-align: center;
@@ -936,7 +936,7 @@ textarea:focus {
   margin-bottom: 10px;
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .linksToPagesSection ul li h3 {
     text-align: center;
   }
@@ -953,7 +953,7 @@ textarea:focus {
   transition: 0.3s;
   border-radius: 5%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .linksToPagesSection ul li a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -978,7 +978,7 @@ textarea:focus {
   padding: 15px;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .linksToPagesSection ul li a i {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1318,7 +1318,7 @@ footer {
 .blogPost .blogImageAndPost .wrapper {
   max-width: 85%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .blogPost .blogImageAndPost .wrapper {
     max-width: 700px;
   }
@@ -1355,7 +1355,7 @@ footer {
     background: linear-gradient(0deg, rgb(250, 255, 254) 9%, rgb(210, 249, 241) 22%, rgb(210, 249, 241) 95%, rgb(250, 255, 254) 100%);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .pastBlogs {
     padding: 10% 0;
     text-align: center;
@@ -1385,7 +1385,7 @@ footer {
     border-radius: 15px 15px 20px 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .pastBlogs .pastBlogImage {
     width: 50%;
   }
@@ -1434,7 +1434,7 @@ footer {
     text-align: left;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .pastBlogs .pastBlogsContent ul .blogLinks {
     text-align: center;
   }
@@ -1443,7 +1443,7 @@ footer {
 .formContainer {
   width: 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .formContainer {
     width: 100%;
   }
@@ -1598,7 +1598,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1615,7 +1615,7 @@ footer {
   -webkit-box-shadow: 20px 20px #50e3c2;
           box-shadow: 20px 20px #50e3c2;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .contact .formContainer {
     bottom: 0;
     -webkit-box-shadow: none;
@@ -1626,7 +1626,7 @@ footer {
 .contact .contactAddress {
   width: 20%;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .contact .contactAddress {
     width: 100%;
   }
@@ -1641,7 +1641,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .contact .contactAddress .socialMediaEmail {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1652,7 +1652,7 @@ footer {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .contact .contactAddress .socialMediaEmail li {
     text-align: center;
   }
@@ -1663,7 +1663,7 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   li {
     text-align: center;
   }
