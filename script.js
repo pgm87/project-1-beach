@@ -7,6 +7,7 @@ const $openButton = $('.openButton');
 const $slideOutNav = $('.slideOutNav');
 const $nav = $('.navBar');
 
+
 $openButton.on('click', () => {
     $slideOutNav.removeClass('slideOutHidden').addClass('slideOutReveal');
 
@@ -37,45 +38,47 @@ const galleryContainer = document.querySelector(".galleryContainer");
 const scrollRight = document.querySelector(".galleryScrollRight");
 const scrollLeft = document.querySelector(".galleryScrollLeft");
 
-
 let mainImageIndex = 1;
 
-
-scrollLeft.addEventListener('click', () => {
-
-    galleryContainer.classList.add('moveLeft');
-    checkButtonDisabled();
-    console.log(mainImageIndex);
-    return mainImageIndex += 1;
-
-
-})
-
-scrollRight.addEventListener('click', () => {
-
-    galleryContainer.classList.add('moveRight');
-    checkButtonDisabled();
-    return mainImageIndex -= 1;
-
-
-})
-
-
+console.log(mainImageIndex);
 
 const checkButtonDisabled = () => {
-    console.log(mainImageIndex);
+    console.log(`${mainImageIndex} from the disabled checker`);
     if (mainImageIndex <= 0) {
-        scrollLeft.toggleAttribute('disabled');
-        console.log(scrollLeft)
+        scrollLeft.setAttribute('disabled', 'true');
+        console.log('Set disabled to true! for scroll left');
+
     }
-    else if (mainImageIndex > ((galleryImage.length) - 1)) {
-        scrollRight.toggleAttribute('disabled');
+    else if (mainImageIndex = ((galleryImage.length) - 1)) {
+        scrollRight.setAttribute('disabled', 'true');
+        console.log('Set disabled to true! for scroll right');
     }
     else {
         scrollRight.removeAttribute('disabled');
         scrollLeft.removeAttribute('disabled');
-
     }
 }
+
+
+scrollLeft.addEventListener('click', () => {
+    mainImageIndex -= 1;
+    checkButtonDisabled();
+    galleryContainer.classList.toggle('moveLeft');
+    galleryImage[mainImageIndex].classList.toggle('transformLarge');
+    galleryImage[mainImageIndex].classList.toggle('transformSmall');
+    galleryImage[mainImageIndex + 1].classList.toggle('transformSmall').classList.toggle('transformLarge');
+})
+
+scrollRight.addEventListener('click', () => {
+    mainImageIndex += 1;
+    checkButtonDisabled();
+    galleryContainer.classList.toggle('moveRight');
+
+
+});
+
+
+
+
 
 

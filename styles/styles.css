@@ -948,13 +948,13 @@ textarea:focus {
 }
 
 .moveLeft {
-  -webkit-transform: translate(-33%);
-          transform: translate(-33%);
+  -webkit-transform: translate(33%);
+          transform: translate(33%);
 }
 
 .moveRight {
-  -webkit-transform: translate(33%);
-          transform: translate(33%);
+  -webkit-transform: translate(-33%);
+          transform: translate(-33%);
 }
 
 .linksToPagesSection {
