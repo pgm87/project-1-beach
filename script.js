@@ -37,15 +37,45 @@ const galleryContainer = document.querySelector(".galleryContainer");
 const scrollRight = document.querySelector(".galleryScrollRight");
 const scrollLeft = document.querySelector(".galleryScrollLeft");
 
-console.log(scrollRight)
+
 let mainImageIndex = 1;
 
 
 scrollLeft.addEventListener('click', () => {
 
     galleryContainer.classList.add('moveLeft');
+    checkButtonDisabled();
+    console.log(mainImageIndex);
+    return mainImageIndex += 1;
 
 
 })
+
+scrollRight.addEventListener('click', () => {
+
+    galleryContainer.classList.add('moveRight');
+    checkButtonDisabled();
+    return mainImageIndex -= 1;
+
+
+})
+
+
+
+const checkButtonDisabled = () => {
+    console.log(mainImageIndex);
+    if (mainImageIndex <= 0) {
+        scrollLeft.toggleAttribute('disabled');
+        console.log(scrollLeft)
+    }
+    else if (mainImageIndex > ((galleryImage.length) - 1)) {
+        scrollRight.toggleAttribute('disabled');
+    }
+    else {
+        scrollRight.removeAttribute('disabled');
+        scrollLeft.removeAttribute('disabled');
+
+    }
+}
 
 
