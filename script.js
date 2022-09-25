@@ -33,7 +33,21 @@ $(document).scroll(function () {
 // <i class="fa-solid fa-arrow-left"></i>
 
 const galleryImage = document.querySelectorAll(".galleryImageContainer")
+const galleryContainer = document.querySelector(".galleryContainer");
+const scrollRight = document.querySelector(".galleryScrollRight");
+const scrollLeft = document.querySelector(".galleryScrollLeft");
 
-galleryImage[0].addEventListener('click', () => {
+console.log(scrollRight)
+
+
+
+scrollLeft.addEventListener('click', () => {
+
+    const className = galleryImage[1].getAttribute("class");
+
+    galleryImage[1].classList.add('moveLeft');
+    console.log(galleryImage[1])
 
 })
+
+
