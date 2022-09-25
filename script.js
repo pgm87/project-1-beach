@@ -38,15 +38,13 @@ const scrollRight = document.querySelector(".galleryScrollRight");
 const scrollLeft = document.querySelector(".galleryScrollLeft");
 
 console.log(scrollRight)
-
+let mainImageIndex = 1;
 
 
 scrollLeft.addEventListener('click', () => {
 
-    const className = galleryImage[1].getAttribute("class");
+    galleryContainer.classList.add('moveLeft');
 
-    galleryImage[1].classList.add('moveLeft');
-    console.log(galleryImage[1])
 
 })
 

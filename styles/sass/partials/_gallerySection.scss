@@ -4,11 +4,13 @@
     background-color: $lightLightBlue;
     margin-top: 30px;
     padding: 100px 0;
+    position: relative;
 
     .galleryContainer {
         display: flex;
         justify-content: space-between;
         position: relative;
+        transition: 1s;
 
         @media (max-width:$mobileWidth) {
 
@@ -23,30 +25,7 @@
             position: relative;
         }
 
-        .galleryScroll {
-            color: $twilightBlue;
-            background-color: $greenCyan;
-            padding: 23px;
-            border-radius: 15%;
-            transition: 0.3s;
-            border-style: none;
 
-            &:hover {
-                color: $iceBlue;
-            }
-        }
-
-        .galleryScrollLeft {
-            position: absolute;
-            top: 40%;
-            right: 68%;
-        }
-
-        .galleryScrollRight {
-            position: absolute;
-            top: 40%;
-            left: 68%;
-        }
 
         .galleryImageContainer {
             flex-basis: 31%;
@@ -68,6 +47,31 @@
             }
         }
     }
+
+    .galleryScroll {
+        color: $twilightBlue;
+        background-color: $greenCyan;
+        padding: 23px;
+        border-radius: 15%;
+        transition: 0.3s;
+        border-style: none;
+
+        &:hover {
+            color: $iceBlue;
+        }
+    }
+
+    .galleryScrollLeft {
+        position: absolute;
+        top: 40%;
+        right: 63%;
+    }
+
+    .galleryScrollRight {
+        position: absolute;
+        top: 40%;
+        left: 63%;
+    }
 }
 
 // SLIDESHOW CLASSES
@@ -82,9 +86,9 @@
 }
 
 .moveLeft {
-    right: 33%;
+    transform: translate(-33%);
 }
 
 .moveRight {
-    left: 33%;
+    transform: translate(33%);
 }
