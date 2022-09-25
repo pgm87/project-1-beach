@@ -523,6 +523,12 @@ textarea:focus {
   transition: 0.3s;
 }
 
+.mainImage {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 2px solid #063974;
+}
+
 .navBar {
   position: sticky;
   top: 0;
@@ -862,6 +868,7 @@ textarea:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 @media (max-width: 512px) {
   .homeGallery .galleryContainer {
@@ -878,8 +885,35 @@ textarea:focus {
   }
 }
 .homeGallery .galleryContainer .galleryImageContainer {
+  position: relative;
+}
+.homeGallery .galleryContainer .galleryScroll {
+  color: #063974;
+  background-color: #50e3c2;
+  padding: 23px;
+  border-radius: 15%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-style: none;
+}
+.homeGallery .galleryContainer .galleryScroll:hover {
+  color: #FAffFE;
+}
+.homeGallery .galleryContainer .galleryScrollLeft {
+  position: absolute;
+  top: 40%;
+  right: 68%;
+}
+.homeGallery .galleryContainer .galleryScrollRight {
+  position: absolute;
+  top: 40%;
+  left: 68%;
+}
+.homeGallery .galleryContainer .galleryImageContainer {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 @media (max-width: 512px) {
   .homeGallery .galleryContainer .galleryImageContainer {
@@ -897,6 +931,21 @@ textarea:focus {
   width: 100%;
   display: block;
   height: auto;
+}
+
+.transformLarge {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.transformSmall {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.8;
+}
+
+.moveRight {
+  right: 33%;
 }
 
 .linksToPagesSection {

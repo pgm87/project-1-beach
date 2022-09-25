@@ -8,6 +8,7 @@
     .galleryContainer {
         display: flex;
         justify-content: space-between;
+        position: relative;
 
         @media (max-width:$mobileWidth) {
 
@@ -19,7 +20,37 @@
         }
 
         .galleryImageContainer {
+            position: relative;
+        }
+
+        .galleryScroll {
+            color: $twilightBlue;
+            background-color: $greenCyan;
+            padding: 23px;
+            border-radius: 15%;
+            transition: 0.3s;
+            border-style: none;
+
+            &:hover {
+                color: $iceBlue;
+            }
+        }
+
+        .galleryScrollLeft {
+            position: absolute;
+            top: 40%;
+            right: 68%;
+        }
+
+        .galleryScrollRight {
+            position: absolute;
+            top: 40%;
+            left: 68%;
+        }
+
+        .galleryImageContainer {
             flex-basis: 31%;
+            transition: 0.4s;
 
             @media (max-width:$mobileWidth) {
 
@@ -37,4 +68,19 @@
             }
         }
     }
+}
+
+// SLIDESHOW CLASSES
+
+.transformLarge {
+    transform: scale(1.05);
+}
+
+.transformSmall {
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+.moveRight {
+    right: 33%;
 }

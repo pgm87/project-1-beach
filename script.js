@@ -1,6 +1,7 @@
 
 $(document).ready()
 
+// OLD NAV BAR IN JQUERY
 const $closeButton = $('.closeButton');
 const $openButton = $('.openButton');
 const $slideOutNav = $('.slideOutNav');
@@ -26,3 +27,13 @@ $(document).scroll(function () {
     }
 })
 
+// CAROUSEL IN VANILLA JS
+
+// <i class="fa-sharp fa-solid fa-arrow-right"></i>
+// <i class="fa-solid fa-arrow-left"></i>
+
+const galleryImage = document.querySelectorAll(".galleryImageContainer")
+
+galleryImage[0].addEventListener('click', () => {
+
+})
