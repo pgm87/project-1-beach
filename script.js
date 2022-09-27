@@ -30,8 +30,7 @@ $(document).scroll(function () {
 
 // CAROUSEL IN VANILLA JS
 
-// <i class="fa-sharp fa-solid fa-arrow-right"></i>
-// <i class="fa-solid fa-arrow-left"></i>
+
 
 const galleryImage = document.querySelectorAll(".galleryImageContainer");
 const galleryContainer = document.querySelector(".galleryContainer");
@@ -61,20 +60,44 @@ const checkButtonDisabled = () => {
     }
 }
 
+const centerImage = () => {
+    // galleryContainer.classList.remove('moveRight');
+    // galleryContainer.classList.remove('moveLeft');
+    galleryContainer.removeAttribute('style');
+}
+
+const transformLeft = (index) => {
+    galleryImage[index].classList.toggle('transformLarge');
+    galleryImage[index].classList.toggle('transformSmall');
+    galleryImage[index + 1].classList.toggle('transformSmall');
+    galleryImage[index + 1].classList.toggle('transformLarge');
+}
+
+
+const transformRight = (index) => {
+    galleryImage[index].classList.toggle('transformLarge');
+    galleryImage[index].classList.toggle('transformSmall');
+    galleryImage[index - 1].classList.toggle('transformSmall');
+    galleryImage[index - 1].classList.toggle('transformLarge');
+}
+
+
 
 scrollLeft.addEventListener('click', () => {
     mainImageIndex -= 1;
     console.log(mainImageIndex);
     checkButtonDisabled();
-
-    if (mainImageIndex < 1) {
-        galleryContainer.classList.toggle('moveLeft');
-        galleryContainer.classList.remove('moveRight');
+    if (mainImageIndex === 1) {
+        centerImage();
+        transformLeft(mainImageIndex);
     }
-    galleryImage[mainImageIndex].classList.toggle('transformLarge');
-    galleryImage[mainImageIndex].classList.toggle('transformSmall');
-    galleryImage[mainImageIndex + 1].classList.toggle('transformSmall');
-    galleryImage[mainImageIndex + 1].classList.toggle('transformLarge');
+    else if (mainImageIndex < 1) {
+        galleryContainer.setAttribute('style', ` transform: translate(${33 * (mainImageIndex + 1)}%);`);
+        // galleryContainer.classList.toggle('moveLeft');
+        // galleryContainer.classList.remove('moveRight');
+        transformLeft(mainImageIndex);
+    }
+
 
 })
 
@@ -82,14 +105,17 @@ scrollRight.addEventListener('click', () => {
     mainImageIndex += 1;
     console.log(mainImageIndex);
     checkButtonDisabled();
-    if (mainImageIndex > 1) {
-        galleryContainer.classList.toggle('moveRight');
-        galleryContainer.classList.remove('moveLeft');
+
+    if (mainImageIndex === 1) {
+        centerImage();
+        transformRight(mainImageIndex);
     }
-    galleryImage[mainImageIndex].classList.toggle('transformLarge');
-    galleryImage[mainImageIndex].classList.toggle('transformSmall');
-    galleryImage[mainImageIndex - 1].classList.toggle('transformSmall');
-    galleryImage[mainImageIndex - 1].classList.toggle('transformLarge');
+    else if (mainImageIndex > 1) {
+        galleryContainer.setAttribute('style', ` transform: translate(${-34 * (mainImageIndex - 1)}%);`);
+        // galleryContainer.classList.toggle('moveRight');
+        // galleryContainer.classList.remove('moveLeft');
+        transformRight(mainImageIndex);
+    }
 
 });
 
