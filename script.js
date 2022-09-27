@@ -83,6 +83,7 @@ const transformRight = (index) => {
 
 
 
+
 scrollLeft.addEventListener('click', () => {
     mainImageIndex -= 1;
     console.log(mainImageIndex);
@@ -96,8 +97,8 @@ scrollLeft.addEventListener('click', () => {
         // galleryContainer.classList.toggle('moveLeft');
         // galleryContainer.classList.remove('moveRight');
         transformLeft(mainImageIndex);
-    }
 
+    }
 
 })
 

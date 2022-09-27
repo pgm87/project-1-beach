@@ -861,6 +861,7 @@ textarea:focus {
   margin-top: 30px;
   padding: 100px 0;
   position: relative;
+  overflow-x: hidden;
 }
 .homeGallery .galleryContainer {
   display: -webkit-box;
@@ -886,9 +887,6 @@ textarea:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-.homeGallery .galleryContainer .galleryImageContainer {
-  position: relative;
 }
 .homeGallery .galleryContainer .galleryImageContainer {
   -ms-flex-preferred-size: 31%;
@@ -958,6 +956,10 @@ textarea:focus {
 .moveRight {
   -webkit-transform: translate(-34%);
           transform: translate(-34%);
+}
+
+.displayNone {
+  display: none;
 }
 
 .linksToPagesSection {
