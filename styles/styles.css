@@ -925,6 +925,9 @@ textarea:focus {
 .homeGallery .galleryScroll:hover {
   color: #FAffFE;
 }
+.homeGallery .galleryScroll:disabled {
+  display: none;
+}
 .homeGallery .galleryScrollLeft {
   position: absolute;
   top: 40%;
@@ -948,13 +951,13 @@ textarea:focus {
 }
 
 .moveLeft {
-  -webkit-transform: translate(33%);
-          transform: translate(33%);
+  -webkit-transform: translate(34%);
+          transform: translate(34%);
 }
 
 .moveRight {
-  -webkit-transform: translate(-33%);
-          transform: translate(-33%);
+  -webkit-transform: translate(-34%);
+          transform: translate(-34%);
 }
 
 .linksToPagesSection {

@@ -59,6 +59,10 @@
         &:hover {
             color: $iceBlue;
         }
+
+        &:disabled {
+            display: none;
+        }
     }
 
     .galleryScrollLeft {
@@ -86,9 +90,9 @@
 }
 
 .moveLeft {
-    transform: translate(33%);
+    transform: translate(34%);
 }
 
 .moveRight {
-    transform: translate(-33%);
+    transform: translate(-34%);
 }

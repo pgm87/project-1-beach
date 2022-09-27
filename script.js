@@ -33,7 +33,7 @@ $(document).scroll(function () {
 // <i class="fa-sharp fa-solid fa-arrow-right"></i>
 // <i class="fa-solid fa-arrow-left"></i>
 
-const galleryImage = document.querySelectorAll(".galleryImageContainer")
+const galleryImage = document.querySelectorAll(".galleryImageContainer");
 const galleryContainer = document.querySelector(".galleryContainer");
 const scrollRight = document.querySelector(".galleryScrollRight");
 const scrollLeft = document.querySelector(".galleryScrollLeft");
@@ -41,19 +41,21 @@ const scrollLeft = document.querySelector(".galleryScrollLeft");
 let mainImageIndex = 1;
 
 console.log(mainImageIndex);
+console.log(galleryImage.length);
 
 const checkButtonDisabled = () => {
-    console.log(`${mainImageIndex} from the disabled checker`);
+
     if (mainImageIndex <= 0) {
         scrollLeft.setAttribute('disabled', 'true');
         console.log('Set disabled to true! for scroll left');
 
     }
-    else if (mainImageIndex = ((galleryImage.length) - 1)) {
+    else if (mainImageIndex === ((galleryImage.length) - 1)) {
         scrollRight.setAttribute('disabled', 'true');
         console.log('Set disabled to true! for scroll right');
     }
     else {
+        console.log("Removed disabled image checker");
         scrollRight.removeAttribute('disabled');
         scrollLeft.removeAttribute('disabled');
     }
@@ -62,18 +64,32 @@ const checkButtonDisabled = () => {
 
 scrollLeft.addEventListener('click', () => {
     mainImageIndex -= 1;
+    console.log(mainImageIndex);
     checkButtonDisabled();
-    galleryContainer.classList.toggle('moveLeft');
+
+    if (mainImageIndex < 1) {
+        galleryContainer.classList.toggle('moveLeft');
+        galleryContainer.classList.remove('moveRight');
+    }
     galleryImage[mainImageIndex].classList.toggle('transformLarge');
     galleryImage[mainImageIndex].classList.toggle('transformSmall');
-    galleryImage[mainImageIndex + 1].classList.toggle('transformSmall').classList.toggle('transformLarge');
+    galleryImage[mainImageIndex + 1].classList.toggle('transformSmall');
+    galleryImage[mainImageIndex + 1].classList.toggle('transformLarge');
+
 })
 
 scrollRight.addEventListener('click', () => {
     mainImageIndex += 1;
+    console.log(mainImageIndex);
     checkButtonDisabled();
-    galleryContainer.classList.toggle('moveRight');
-
+    if (mainImageIndex > 1) {
+        galleryContainer.classList.toggle('moveRight');
+        galleryContainer.classList.remove('moveLeft');
+    }
+    galleryImage[mainImageIndex].classList.toggle('transformLarge');
+    galleryImage[mainImageIndex].classList.toggle('transformSmall');
+    galleryImage[mainImageIndex - 1].classList.toggle('transformSmall');
+    galleryImage[mainImageIndex - 1].classList.toggle('transformLarge');
 
 });
 
