@@ -98,6 +98,7 @@ scrollLeft.addEventListener('click', () => {
         // galleryContainer.classList.remove('moveRight');
         transformLeft(mainImageIndex);
 
+
     }
 
 })

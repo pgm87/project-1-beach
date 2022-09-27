@@ -876,33 +876,18 @@ textarea:focus {
 }
 @media (max-width: 512px) {
   .homeGallery .galleryContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 .homeGallery .galleryContainer .galleryImageContainer {
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 @media (max-width: 512px) {
   .homeGallery .galleryContainer .galleryImageContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
     margin-bottom: 30px;
   }
 }
@@ -920,8 +905,18 @@ textarea:focus {
   transition: 0.3s;
   border-style: none;
 }
+@media (max-width: 512px) {
+  .homeGallery .galleryScroll {
+    padding: 8px;
+  }
+}
 .homeGallery .galleryScroll:hover {
   color: #FAffFE;
+  cursor: pointer;
+}
+.homeGallery .galleryScroll:focus {
+  color: #FAffFE;
+  cursor: pointer;
 }
 .homeGallery .galleryScroll:disabled {
   display: none;
@@ -930,22 +925,42 @@ textarea:focus {
   position: absolute;
   top: 40%;
   right: 63%;
+  z-index: 20;
+}
+@media (max-width: 512px) {
+  .homeGallery .galleryScrollLeft {
+    right: 80%;
+  }
 }
 .homeGallery .galleryScrollRight {
   position: absolute;
   top: 40%;
   left: 63%;
+  z-index: 20;
+}
+@media (max-width: 512px) {
+  .homeGallery .galleryScrollRight {
+    left: 80%;
+  }
 }
 
 .transformLarge {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  z-index: 10;
+}
+@media (max-width: 512px) {
+  .transformLarge {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 
 .transformSmall {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0.8;
+  z-index: 0;
 }
 
 .moveLeft {
