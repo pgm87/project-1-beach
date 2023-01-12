@@ -4,28 +4,33 @@
     background-color: $lightLightBlue;
     margin-top: 30px;
     padding: 100px 0;
+    position: relative;
+    overflow-x: hidden;
 
     .galleryContainer {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        transition: 1s;
 
         @media (max-width:$mobileWidth) {
 
-            flex-direction: column;
-            flex-wrap: wrap;
+            //     flex-direction: column;
+            //     flex-wrap: wrap;
             width: 100%;
-            align-items: center;
+
 
         }
 
+
+
         .galleryImageContainer {
-            flex-basis: 31%;
+            flex-basis: 100%;
+            transition: 0.4s;
 
             @media (max-width:$mobileWidth) {
 
-                flex-direction: column;
-                flex-wrap: wrap;
-                width: 75%;
+                width: 100%;
                 margin-bottom: 30px;
 
             }
@@ -37,4 +42,85 @@
             }
         }
     }
+
+    .galleryScroll {
+        color: $twilightBlue;
+        background-color: $greenCyan;
+        padding: 23px;
+        border-radius: 15%;
+        transition: 0.3s;
+        border-style: none;
+
+        @media (max-width:$mobileWidth) {
+            padding: 8px;
+        }
+
+        &:hover {
+            color: $iceBlue;
+            cursor: pointer;
+        }
+
+        &:focus {
+            color: $iceBlue;
+            cursor: pointer;
+        }
+
+        &:disabled {
+            display: none;
+        }
+    }
+
+    .galleryScrollLeft {
+        position: absolute;
+        top: 40%;
+        right: 63%;
+        z-index: 20;
+
+        @media (max-width:$mobileWidth) {
+            right: 80%;
+        }
+    }
+
+    .galleryScrollRight {
+        position: absolute;
+        top: 40%;
+        left: 63%;
+        z-index: 20;
+
+        @media (max-width:$mobileWidth) {
+            left: 80%;
+        }
+    }
+}
+
+// SLIDESHOW CLASSES
+
+.transformLarge {
+    transform: scale(1.05);
+    z-index: 10;
+
+    @media (max-width:$mobileWidth) {
+
+        transform: scale(2);
+
+    }
+}
+
+.transformSmall {
+    transform: scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.moveLeft {
+    transform: translate(34%);
+
+}
+
+.moveRight {
+    transform: translate(-34%);
+}
+
+.displayNone {
+    display: none;
 }
