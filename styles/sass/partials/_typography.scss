@@ -1,15 +1,22 @@
 @use "variables" as *;
 
+/* lato-regular - latin */
 @font-face {
     font-family: "Lato";
-    src: url(../fonts/Lato-Regular.ttf);
-    font-weight: normal;
+    font-style: normal;
+    src: local(''), url(../fonts/Lato-Regular.ttf) format('trutype'),
+        url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v23-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: 400;
 }
+
 
 @font-face {
     font-family: "Lato";
     src: url(../fonts/Lato-Italic.ttf);
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -30,6 +37,7 @@
     font-family: "Lato";
     src: url(../fonts/Lato-Light.ttf);
     font-weight: light;
+    font-style: normal;
 }
 
 @font-face {
@@ -39,18 +47,8 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Lato";
-    src: url(../fonts/Lato-Thin.ttf);
-    font-weight: lighter;
-}
 
-@font-face {
-    font-family: "Lato";
-    src: url(../fonts/Lato-ThinItalic.ttf);
-    font-weight: lighter;
-    font-style: italic;
-}
+
 
 // LATO FONTS ENDS
 
@@ -91,10 +89,12 @@ a {
 
 }
 
+
 h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 blockquote {
     font-family: $headingFont;
@@ -128,7 +128,7 @@ h2 {
 }
 
 h3 {
-    font-size: calc(2 * $baseFont);
+    font-size: calc(1.5 * $baseFont);
     font-family: $bodyFont;
     font-weight: bold;
     color: $spruce;
@@ -141,6 +141,10 @@ p {
     font-family: $bodyFont;
     line-height: 32px;
     letter-spacing: 2px;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 h4 {
@@ -151,9 +155,46 @@ h4 {
     color: $twilightBlue;
 }
 
+h5 {
+    font-family: $bodyFont;
+    font-weight: bold;
+    font-size: calc(1.1 * $baseFont);
+    letter-spacing: 2px;
+    color: $twilightBlue;
+}
+
 h6 {
     font-family: $bodyFont;
     font-weight: lighter;
     font-size: $baseFont;
     color: $iceBlue;
+}
+
+a {
+    font-family: $bodyFont;
+}
+
+form,
+input,
+textarea {
+    font-family: $bodyFont;
+    font-size: $baseFont;
+}
+
+.asideLink {
+    font-family: $bodyFont;
+    color: $black;
+    font-size: $baseFont;
+
+}
+
+.linkGreen {
+    color: $spruce;
+    font-weight: bold;
+}
+
+address {
+    font-family: $bodyFont;
+    font-style: normal;
+
 }

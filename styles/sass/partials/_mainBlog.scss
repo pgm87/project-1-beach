@@ -4,41 +4,214 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width:$tabletLandscape) {
+        flex-direction: column;
+
+    }
 
     .blogImageAndPost {
         display: flex;
         flex-direction: column;
         width: 70%;
         position: relative;
-        bottom: 300px;
-        border-right: 10px solid $greenCyan;
-        border-bottom: 10px solid $greenCyan;
+        bottom: 50px;
+        border-right: 5px solid $greenCyan;
+        border-bottom: 5px solid $greenCyan;
+        padding-right: 15px;
 
+        @media (max-width:$tabletLandscape) {
+
+            width: 95%;
+
+        }
+
+        @media (max-width:$mobileWidth) {
+            bottom: 0;
+            width: 100%;
+            border-right: 0;
+            border-bottom: 0;
+            padding-right: 0;
+        }
 
         .mainBlogImage {
             width: 100%;
+            box-shadow: 20px 20px $greenCyan;
+            position: relative;
+            bottom: 100px;
+
+            @media (max-width:$mobileWidth) {
+                bottom: 0;
+                width: 100%;
+                box-shadow: none;
+                border-top: 10px solid $greenCyan;
+                border-bottom: 10px solid $greenCyan;
+            }
 
             img {
                 width: 100%;
                 display: block;
                 height: auto;
+                max-width: 1600px;
             }
 
         }
 
         .blogContent {
             text-align: left;
+            padding-right: 5px;
+            padding-bottom: 10px;
+
+            @media (max-width:$mobileWidth) {
+                width: 100%;
+                padding-top: 30px;
+                padding-left: 5%;
+                border-right: 10px solid $greenCyan;
+                border-bottom: 10px solid $greenCyan;
+
+            }
+
+            .subtitle {
+                color: $twilightBlue;
+                font-style: italic;
+
+                em {
+                    font-weight: 900;
+                }
+            }
         }
 
         .wrapper {
 
-            max-width: 700px;
-            width: 70%;
+            max-width: 85%;
+
+            @media (max-width:$tabletRegular) {
+                max-width: 700px;
+            }
         }
     }
 }
 
 .pastBlogs {
+    a {
+
+
+        &:hover {
+            border-bottom: 2px solid $spruce;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $spruce;
+        }
+    }
 
     width: 20%;
+    padding-left: 20px;
+    margin-top: 100px;
+
+    @media (max-width:$tabletLandscape) {
+        margin-top: 0;
+        width: 100%;
+        padding: 10% 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        background: rgb(250, 255, 254);
+        background: linear-gradient(0deg, rgba(250, 255, 254, 1) 9%, rgba(210, 249, 241, 1) 22%, rgba(210, 249, 241, 1) 95%, rgba(250, 255, 254, 1) 100%);
+
+    }
+
+    @media (max-width:$tabletRegular) {
+
+
+        padding: 10% 0;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+
+    }
+
+    .pastBlogImage {
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+
+            @media (max-width:$tabletLandscape) {
+
+                border-radius: 15px 15px 20px 20px;
+
+            }
+        }
+
+        @media (max-width:$tabletLandscape) {
+
+            width: 30%;
+            border-radius: 15px 15px 20px 20px;
+
+        }
+
+        @media (max-width:$tabletRegular) {
+
+            width: 50%;
+
+        }
+    }
+
+    .pastBlogsContent {
+        @media (max-width:$tabletLandscape) {
+
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+            padding-bottom: 5%;
+        }
+
+
+
+        @media (max-width:$mobileWidth) {
+            margin-left: 0;
+        }
+
+        h4 {
+            font-size: $baseFont;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        p {
+            line-height: 1.1rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+
+            .asideLink {
+                margin-top: 10px;
+            }
+        }
+
+
+
+        ul {
+            margin-top: 20px;
+
+            .blogLinks {
+                list-style: inside;
+                color: $greenCyan;
+
+                @media (max-width:$tabletLandscape) {
+
+                    list-style: disc;
+                    text-align: left;
+
+                }
+
+                @media (max-width:$tabletRegular) {
+                    text-align: center;
+                }
+
+
+            }
+        }
+    }
 }

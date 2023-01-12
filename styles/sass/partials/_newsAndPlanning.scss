@@ -8,49 +8,121 @@
     background-color: $lightLightBlue;
 
     .newsImages {
-        width: 42%;
+        max-width: 42%;
+
+        @media (max-width:$tabletLandscape) {
+            max-width: 60%;
+            align-items: center;
+
+        }
+
+        @media (max-width:$mobileWidth) {
+            max-width: 100%;
+            align-items: center;
+
+        }
     }
 
     .image1 {
         position: relative;
-        bottom: 50px;
-        box-shadow: 20px 20px $greenCyan;
+        top: -60px;
+
+
+        @media (max-width:$tabletLandscape) {
+            order: 1;
+            top: 0;
+
+        }
+
+        img {
+            box-shadow: 20px 20px $greenCyan;
+            max-width: 550px;
+
+            @media (max-width:$mobileWidth) {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
     }
 
     .image2 {
         position: relative;
         top: 50px;
-        box-shadow: -20px 20px $greenCyan;
+        right: 0;
+        max-width: 100%;
+
+
+        @media (max-width:$tabletLandscape) {
+            order: 3;
+            top: 0;
+            margin-left: auto;
+            max-width: 550px;
+            box-shadow: none;
+        }
+
+        img {
+            box-shadow: -20px 20px $greenCyan;
+            max-width: 550px;
+
+            @media (max-width:$mobileWidth) {
+
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
     }
 
 
     .newsContentBox {
         width: 42%;
+
+
+        @media (max-width:$tabletLandscape) {
+            width: 100%;
+
+        }
     }
 
     .box1 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 5% 5% 5% 0%;
+        padding: 5% 7% 5% 0%;
+
+        @media (max-width:$tabletLandscape) {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 10% 5%;
+            order: 2;
+        }
     }
 
     .box2 {
         display: flex;
         flex-direction: column;
-        padding: 5% 0 5% 5%;
+        padding: 5% 0 5% 7%;
         align-items: flex-end;
+
+        @media (max-width:$tabletLandscape) {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 10% 5%;
+            order: 4;
+        }
 
         p {
             text-align: right;
+
+            @media (max-width:$tabletLandscape) {
+                text-align: center;
+                align-self: center;
+
+            }
         }
 
     }
 
 
-}
-
-img {
-    width: 100%;
-    display: block;
 }

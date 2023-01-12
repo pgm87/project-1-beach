@@ -7,23 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/9ebd40d00c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="blogBackgroundTop">
-        <nav>
-            <div class="navContainer wrapper">
-                <a class="logo">BEACHSTAYS</a>
-                <!-- h4 ends -->
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <!-- nav ul ends -->
+    <nav class="navBar">
+        <div class="wrapper">
+            <a class="logo" href="./index.html">BEACHSTAYS</a>
+            <!-- h4 ends -->
+            <button class="menuButton openButton">
+                <i class="fa-solid fa-bars" alt="open menu"></i>
+            </button>
+            <!-- menu icon  -->
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <!-- nav ul ends -->
+        </div>
+        <!-- wrapper ends -->
+
+        <!-- nav container wrapper ends -->
+        <div class="slideOutNav slideOutHidden">
+            <div class="buttonContainer">
+                <button class="menuButton closeButton">
+                    <i class="fa-solid fa-x"></i>
+                </button>
             </div>
-        </nav>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- div slideout nav ends -->
+    </nav>
+    <!-- nav ends -->
+    <div class="blogBackgroundTop">
         <header class="blogHeader wrapper">
             <h2 class="blogH2">Blog</h2>
         </header>
@@ -37,50 +62,85 @@
                 <div class="mainBlogImage"><img src="./assets/post-image.jpg" alt="A beachhouse at night"></div>
                 <article class="blogContent wrapper">
                     <h3>Five Days at the Ocean Sea</h3>
-                    <p class="subtitle">Monday January 13th 2009</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni eos praesentium ad
-                        libero nobis, eum delectus quos, ea porro quas animi rerum beatae, deleniti blanditiis
-                        officia ducimus at modi optio illo ratione aperiam. Aperiam consequatur atque, aliquid unde
-                        debitis consectetur corporis qui omnis dolorem commodi ea nihil, perspiciatis quod totam
-                        odio in ducimus asperiores esse quae beatae provident dicta veniam rerum deleniti. Nisi
-                        expedita perferendis fugit possimus ea explicabo, quis iusto dolores a autem accusantium
-                        sequi fugiat assumenda est ut nesciunt asperiores. Excepturi illum quis, repellat est rerum
-                        temporibus expedita. Impedit dignissimos facere beatae ab quisquam numquam optio fugiat
-                        delectus repudiandae veritatis natus, tempore voluptates consequatur maxime reprehenderit
-                        corporis cum sapiente, sit tenetur cumque perferendis cupiditate! Debitis blanditiis
-                        doloremque quidem nostrum dignissimos tempore itaque corporis nesciunt, est sunt saepe esse
-                        minima suscipit nobis vel aperiam nihil autem, molestias corrupti. Sed dolorem quae
-                        doloribus minus laborum facilis numquam vel quibusdam. Iste nostrum suscipit, qui sit
-                        corrupti eligendi nemo similique vel voluptatum quas? Asperiores mollitia odit facere
-                        placeat, nisi dolor tenetur repellendus, iure iusto, pariatur eos accusantium voluptatum
-                        quod quam perspiciatis atque corrupti? Facere consequatur enim minima eius similique,
-                        expedita nihil assumenda, itaque accusantium, nisi eaque deleniti eveniet dignissimos!
-                        Voluptatibus, voluptates!</p>
+                    <p class="subtitle">Monday January 13th 2009 by <em>Bora</em></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem laborum rem eaque sequi
+                        sunt impedit reprehenderit distinctio, veniam ea nemo optio quisquam. Iste culpa tempore sed
+                        esse deserunt aperiam itaque voluptates rem harum autem nobis adipisci earum fugiat quam officia
+                        magnam dolores obcaecati placeat fugit error, quis tenetur blanditiis?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita et, repellat veniam minus eius
+                        placeat maiores odio sed quos explicabo dolor quia molestiae possimus obcaecati ea atque natus
+                        pariatur nulla aut iste, alias, corrupti aperiam. Magnam numquam odio delectus doloremque
+                        temporibus veritatis, ipsam velit eum placeat? Voluptatum quo tempora soluta necessitatibus
+                        corrupti in, maiores molestias, facilis minima obcaecati quod officiis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nesciunt voluptas voluptatum
+                        dolorum, dolores eum, placeat sunt provident expedita corporis unde? Placeat architecto tempora
+                        ab laudantium similique omnis porro magni, voluptatum odio tenetur neque quo eveniet in commodi
+                        soluta culpa esse eum hic at dicta reiciendis quisquam! Vitae voluptatibus error asperiores
+                        corporis eveniet sint exercitationem, fugiat tenetur inventore voluptate perferendis magnam.
+                        Eligendi est quae at perferendis, numquam illum distinctio illo deserunt quisquam ratione sed,
+                        labore tempore error ex quasi ad.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem facilis non accusamus
+                        voluptatibus possimus deserunt ullam esse quam dicta.</p>
                 </article>
                 <!-- blog image and content ends -->
             </div>
+            <!-- blog image and post ends -->
             <aside class="pastBlogs">
                 <div class="pastBlogImage">
                     <img src="./assets/sidebar-image.jpg" alt="House on stilts at the beach">
                 </div>
-                <!-- past blog images -->
-                <h4>Our mission</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem.</p>
-                <a href="#">Find out more</a>
-                <h4>Recent posts</h4>
-                <ul>
-                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
-                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
-                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
-                    <li><a href="#"></a>Lorem ipsum dolor sit.</li>
-                </ul>
-                <!-- ul ends -->
+                <!-- past blog images ends -->
+                <div class="pastBlogsContent">
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem. <br> <a
+                            href="#" class="asideLink linkGreen">Find out more</a></p>
+
+
+                    <h4>Recent posts</h4>
+                    <ul>
+                        <li class="blogLinks"><a class="asideLink" href="#">Lorem ipsum dolor sit.</a></li>
+                        <li class="blogLinks"><a class="asideLink" href="#">Lorem ipsum dolor sit.</a></li>
+                        <li class="blogLinks"><a class="asideLink" href="#">Lorem ipsum dolor sit.</a></li>
+                        <li class="blogLinks"><a class="asideLink" href="#">Lorem ipsum dolor sit.</a></li>
+                    </ul>
+                    <!-- ul ends -->
+                </div>
+                <!-- past blogs content ends -->
+
             </aside>
             <!-- past blogs ends -->
         </section>
         <!-- blog post ends -->
         <section class="blogComments wrapper">
             <!-- COMMENTS TEXT WILL GO HERE -->
+            <article class="commentSection">
+                <h4>Comments</h4>
+                <ul>
+                    <li>
+                        <div class="commentImageContainer">
+                            <img src="./assets/comment-image.jpg" alt="Photo of Reynash who left the comment">
+                        </div>
+                        <div class="commentContainer">
+                            <h5>Tuesday October 9th by Reyansh</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime reiciendis cumque,
+                                dolor eum repellat vero dolorum labore sit minus!</p>
+                        </div>
+                        <!-- commentContainer Ends -->
+                    </li>
+                    <li>
+                        <div class="commentImageContainer">
+                            <img src="./assets/comment-image2.jpg" alt="Photo of Olivia">
+                        </div>
+                        <div class="commentContainer">
+                            <h5>Wednesday October 10th 2019 by Olivia</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eum similique
+                                maiores nostrum dolores quasi officia tempora adipisci quia culpa.</p>
+                        </div>
+                        <!-Comment Container Ends -->
+                    </li>
+                </ul>
+            </article>
+            <!-- comments section ends -->
             <div class="formContainer">
                 <form action="" method="">
                     <label class="sr-only" for="name">Name</label>
@@ -88,13 +148,23 @@
                     <label class="sr-only" for="commentEmail">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email">
                     <label for="comment" class="sr-only">Write Comment Here</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="10" required minlength="15"
+                        placeholder="Comment"></textarea>
                     <button class="button">Post Comment</button>
                 </form>
+                <!-- Form ends here -->
             </div>
-            <!-- form ends here -->
+            <!-- form container ends here -->
         </section>
     </main>
+    <!-- main ends -->
+    <footer>
+        <h6>Copyright &copy; 2022 Juno</h6>
+    </footer>
+    <!-- footer ends -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Beachstays</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/9ebd40d00c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="wrapper">
+
+            <a class="logo" href="./index.html">BEACHSTAYS</a>
+            <!-- h4 ends -->
+            <button class="menuButton openButton">
+                <i class="fa-solid fa-bars" alt="open menu"></i>
+            </button>
+            <!-- menu icon  -->
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <!-- nav ul ends -->
+        </div>
+        <!-- wrapper ends -->
+
+        <!-- nav container wrapper ends -->
+        <div class="slideOutNav slideOutHidden">
+            <div class="buttonContainer">
+                <button class="menuButton closeButton">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- div slideout nav ends -->
+    </nav>
+    <!-- nav ends -->
+    <div class="contactHeaderImage">
+
+        <!-- nav ends -->
+        <header class="contactHeader">
+            <h2 class="contactH2 wrapper">Get in Touch</h2>
+        </header>
+        <!-- header image ends -->
+    </div>
+    <!-- contactHeaderImage ends -->
+    <main>
+        <section class="contact wrapper">
+            <div class="formContainer">
+                <form action="" method="">
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" name="name" id="commentName" required placeholder="Name">
+                    <label class="sr-only" for="commentEmail">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="comment" class="sr-only">Write Comment Here</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" required minlength="30"
+                        placeholder="Message"></textarea>
+                    <button class="button">Submit</button>
+                </form>
+                <!-- Form ends here -->
+            </div>
+
+            <div class="contactAddress">
+                <ul class="socialMediaEmail">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="">info@email.com</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li>123 - 456 -7890</li>
+                        <li>123 Queen Street West</li>
+                        <li>Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V 2D5</li>
+                    </ul>
+                </address>
+            </div>
+        </section>
+    </main>
+    <!-- main ends -->
+    <footer>
+        <h6>Copyright &copy; 2022 Juno</h6>
+    </footer>
+    <!-- footer ends -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

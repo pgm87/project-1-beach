@@ -8,37 +8,61 @@
     <title>Beach Stay</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/9ebd40d00c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="homeBackgroundTop">
-        <nav>
-            <div class="navContainer wrapper">
-                <a class="logo">BEACHSTAYS</a>
-                <!-- h4 ends -->
-                <ul>
-                    <li><a href="#">HOME</a></li>
+
+    <nav class="navBar heightNone">
+        <div class="wrapper">
+            <a class="logo" href="./index.html">BEACHSTAYS</a>
+            <!-- h4 ends -->
+            <button class="menuButton openButton">
+                <i class="fa-solid fa-bars" alt="open menu"></i>
+            </button>
+            <!-- menu icon  -->
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <!-- nav ul ends -->
+        </div>
+        <!-- wrapper ends -->
+
+        <!-- nav container wrapper ends -->
+        <div class="slideOutNav slideOutHidden">
+            <div class="buttonContainer">
+                <button class="menuButton closeButton">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="./index.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
-                <!-- nav ul ends -->
-            </div>
-        </nav>
-        <!-- nav ends -->
-        <header>
-            <div class="headerBoxImage">
-                <img src="./assets/header-box.jpg" alt="Picture of Sunglasses on the Beach">
-            </div>
-            <!-- headerBoxImage ends -->
-            <h1><span class="h1Span">welcome to</span>Beachstay</h1>
-        </header>
-        <!-- header ends -->
+            </nav>
+        </div>
+        <!-- div slideout nav ends -->
+    </nav>
+    <!-- nav ends -->
+    <header class="headerMain">
+        <div class="headerBoxImage">
+            <img src="./assets/header-box.jpg" alt="Picture of Sunglasses on the Beach">
+        </div>
+        <!-- headerBoxImage ends -->
+        <h1><span class="h1Span">welcome to</span>Beachstays</h1>
+    </header>
+    <!-- header ends -->
     </div>
     <!-- Homebackground top ends -->
     <main>
         <section class="visitSection wrapper">
-            <div class="visitConentBox">
+            <div class="visitContentBox">
                 <h3>Visit Guyana</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, distinctio cum? Facilis nisi vel
                     voluptatem iure hic ad at expedita voluptas autem quis nulla possimus reprehenderit dolore assumenda
@@ -54,15 +78,24 @@
         </section>
         <!-- Visit section ends -->
         <section class="homeGallery">
-            <div class="galleryContainer wrapper">
-                <div class="galleryImageContainer image1"><img src="./assets/gallery-image1.jpg"
-                        alt="Beautiful vacation home on the beach"></div>
-                <div class="galleryImageContainer image2"><img src="./assets/gallery-image2.jpg"
+            <ul class="galleryContainer wrapper">
+                <li class="galleryImageContainer image1 transformSmall"><img src="./assets/gallery-image1.jpg"
+                        alt="Beautiful vacation home on the beach"></li>
+                <!-- img 1 ends -->
+                <li class="galleryImageContainer image2 transformLarge"><img src="./assets/gallery-image2.jpg"
                         alt="Entrance to a cottage">
-                </div>
-                <div class="galleryImageContainer image3"><img src="./assets/gallery-image3.jpg"
-                        alt="Tall beautiful vacation home facing the beach"></div>
-            </div>
+                </li>
+                <!-- img 2 ends -->
+                <li class="galleryImageContainer image3 transformSmall"><img src="./assets/gallery-image3.jpg"
+                        alt="Tall beautiful vacation home facing the beach"></li>
+                <!-- img 3 ends -->
+            </ul>
+            <button class="galleryScroll galleryScrollLeft" id="scrollLeft"><i class="fa-solid fa-arrow-left fa-xl"
+                    alt="scroll gallery left"></i></button>
+            <!-- scroll left ends -->
+            <button class="galleryScroll galleryScrollRight" id="scrollRight"><i class="fa-solid fa-arrow-right fa-xl"
+                    alt="scroll gallery right"></i></button>
+            <!-- scroll right ends -->
             <!-- Gallery container ends -->
         </section>
         <!-- home gallery section sends -->
@@ -70,9 +103,9 @@
             <ul>
                 <li>
                     <a href="" class="pagesLinksContentBox">
-                        <img src="./assets/house-svgrepo-com.svg" alt="Icon representing a house">
+                        <i class="fa-solid fa-house-chimney"></i>
                         <div>
-                            <h2>Beach houses</h2>
+                            <h3>Beach houses</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis ullam repellat quo.
                                 Quidem
                                 saepe alias accusantium hic. A, voluptatum!</p>
@@ -82,10 +115,9 @@
                 </li>
                 <li>
                     <a href="" class="pagesLinksContentBox">
-                        <img src="./assets/people-svgrepo-com.svg" alt="Icon representing community">
-
+                        <i class="fa-solid fa-users" alt="Icon representing community"></i>
                         <div>
-                            <h2>Community</h2>
+                            <h3>Community</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis ullam repellat quo.
                                 Quidem
                                 saepe alias accusantium hic. A, voluptatum!</p>
@@ -94,11 +126,10 @@
                     <!-- second content box ends -->
                 </li>
                 <li>
-                    <a href="" class="pagesLinksContentBox">
-                        <img src="./assets/file-interface-symbol-of-paper-sheet-outline-with-right-upper-corner-folded-svgrepo-com.svg"
-                            alt="Blog Icon">
+                    <a href="./blog.html" class="pagesLinksContentBox">
+                        <i class="fa-solid fa-file" alt="Icon representing paper"></i>
                         <div>
-                            <h2>Blog</h2>
+                            <h3>Blog</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis ullam repellat quo.
                                 Quidem
                                 saepe alias accusantium hic. A, voluptatum!</p>
@@ -107,10 +138,10 @@
                     <!-- third content box ends -->
                 </li>
                 <li>
-                    <a href="" class="pagesLinksContentBox">
-                        <img src="./assets/phone-svgrepo-com.svg" alt="Icon of a phone">
+                    <a href="./contact.html" class="pagesLinksContentBox">
+                        <i class="fa-solid fa-phone-flip" alt="Icon representing a phone"></i>
                         <div>
-                            <h2>Get in Touch</h2>
+                            <h3>Get in Touch</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis ullam repellat quo.
                                 Quidem
                                 saepe alias accusantium hic. A, voluptatum!</p>
@@ -119,7 +150,6 @@
                     <!-- fourth content box ends -->
                 </li>
             </ul>
-
         </section>
         <!-- links to other pages section ends -->
         <section class="newsAndPlanning">
@@ -144,7 +174,7 @@
         </section>
         <!-- news section ends -->
         <secion class="promotion">
-            <div class="promotionImage"><img src="./assets/banner-image.jpg" alt="Overhead shot of a beach villa"></div>
+            <div class="promotionImageBox"></div>
             <div class="promotionContentBox">
                 <!-- promotion image ends -->
                 <h4>Free Trip with Beachstays</h4>
@@ -162,6 +192,10 @@
         <h6>Copyright &copy; 2022 Juno</h6>
     </footer>
     <!-- footer ends -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

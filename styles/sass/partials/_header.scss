@@ -1,50 +1,98 @@
 @use "variables" as *;
 
-.homeBackgroundTop {
+
+
+
+.headerMain {
     background-image: url(../assets/home-image-1.jpg);
-    background-size: auto;
+    background-size: cover;
     margin-bottom: 180px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+    .headerBoxImage {
+        position: absolute;
+        bottom: -80px;
+        left: 0;
 
-    header {
-        display: flex;
-        padding: 40px 0;
+        @media (max-width:$tabletLandscape) {
+            display: none;
 
-        .headerBoxImage {
-            width: 40%;
-            position: relative;
-            top: 90px;
-
-            img {
-                width: 100%;
-                display: block;
-            }
         }
 
-        h1 {
-            display: flex;
-            flex-direction: column;
-            font-family: $headingFont;
-            font-size: calc(5.8 * $baseFont);
-            font-weight: 900;
-            font-style: italic;
-            color: $twilightBlue;
-            z-index: 10;
 
-            position: relative;
-            top: 10rem;
-            right: 6.5%;
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+            max-width: 500px;
+        }
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        font-family: $headingFont;
+        font-size: calc(5.8 * $baseFont);
+        font-weight: 900;
+        font-style: italic;
+        color: $twilightBlue;
+        z-index: 10;
+        position: absolute;
+        bottom: 125px;
+        left: 400px;
+
+        @media (max-width:1194px) {
+
+            bottom: 125px;
+            left: 15%;
+            margin-right: 10px;
+
+        }
 
 
-            .h1Span {
-                font-family: $bodyFont;
-                color: $spruce;
-                font-size: calc(2.2 * $baseFont);
-                display: inline-block;
-                font-weight: bold;
-                line-height: 2rem;
-                letter-spacing: 6.7px;
-                font-style: normal;
+        @media (max-width:$tabletLandscape) {
+
+            text-align: center;
+            align-items: center;
+            top: 12rem;
+
+            font-size: calc(3.5* $baseFont);
+        }
+
+        @media (max-width:$tabletRegular) {
+
+            left: 13%;
+            top: 13rem;
+            font-size: calc(3* $baseFont);
+        }
+
+
+        @media (max-width:$mobileWidth) {
+            font-size: calc(2 * $baseFont);
+            top: 13rem;
+            left: 15%;
+        }
+
+
+        .h1Span {
+            font-family: $bodyFont;
+            color: $spruce;
+            font-size: calc(3 * $baseFont);
+            display: inline-block;
+            font-weight: bold;
+            line-height: 58px;
+            letter-spacing: 6.7px;
+            font-style: normal;
+
+            @media (max-width:$mobileWidth) {
+                font-size: calc(2 * $baseFont);
+                text-align: center;
+
             }
         }
     }

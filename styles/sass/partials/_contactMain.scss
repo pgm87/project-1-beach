@@ -1,0 +1,68 @@
+@use "variables" as *;
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:$tabletRegular) {
+        flex-direction: column;
+    }
+
+    .formContainer {
+        width: 70%;
+        padding: 2rem;
+        background-color: $iceBlue;
+        position: relative;
+        bottom: 180px;
+        box-shadow: 20px 20px $greenCyan;
+
+        @media (max-width:$tabletRegular) {
+            bottom: 0;
+            box-shadow: none;
+            width: 100%;
+        }
+    }
+
+    .contactAddress {
+        width: 20%;
+
+        @media (max-width:$tabletRegular) {
+
+            width: 100%;
+        }
+
+        .socialMediaEmail {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            @media (max-width:$tabletRegular) {
+
+                justify-content: center;
+            }
+
+            li {
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                @media (max-width:$tabletRegular) {
+                    text-align: center;
+                }
+
+                &:last-child {
+                    flex-basis: 100%;
+                    font-weight: bold;
+
+
+                }
+            }
+
+        }
+    }
+}
+
+li {
+    @media (max-width:$tabletRegular) {
+        text-align: center;
+    }
+}

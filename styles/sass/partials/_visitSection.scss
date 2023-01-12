@@ -2,20 +2,85 @@
 
 .visitSection {
     display: flex;
-    padding: 20px 0;
+    padding: 30px 0;
+    padding-bottom: 50px;
     justify-content: space-between;
+
+
+    @media (max-width:$tabletLandscape) {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .visitContentBox {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:$tabletLandscape) {
+
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+        .button {
+            align-self: flex-start;
+
+            @media (max-width:$tabletLandscape) {
+
+                align-self: center;
+            }
+        }
+
+    }
 
 
 
     .visitImageBox {
-        min-width: 28%;
-        margin-left: 10%;
-        box-shadow: -20px 20px $greenCyan;
+        width: 28%;
+        height: fit-content;
+        margin-left: 5%;
+
+
+        @media (max-width:$tabletLandscape) {
+            box-shadow: none;
+            border: 5px solid $greenCyan;
+            margin: 0 auto;
+            margin-bottom: 5%;
+            width: 50%;
+        }
+
+        @media (max-width:$tabletRegular) {
+
+            width: 80%;
+        }
+
+        @media (max-width:$mobileWidth) {
+            box-shadow: none;
+            border: 5px solid $greenCyan;
+            margin: 0 auto;
+            margin-bottom: 5%;
+            width: 80%;
+        }
 
         img {
             width: 100%;
             display: block;
+            height: auto;
+            max-width: 275px;
+            box-shadow: -20px 20px $greenCyan;
+
+            @media (max-width:$tabletLandscape) {
+                box-shadow: none;
+                max-width: 100%;
+
+            }
         }
     }
+
+
+
 
 }

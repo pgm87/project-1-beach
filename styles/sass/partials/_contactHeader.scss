@@ -1,29 +1,22 @@
 @use "variables" as *;
 
-.blogBackgroundTop {
-    background-image: url(../assets/blog-image-1.jpg);
+.contactHeaderImage {
+    background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    @media (max-width:$mobileWidth) {
-        height: 100vh;
-    }
+    margin-bottom: 20px;
 }
 
-.blogHeader {
+.contactHeader {
     padding: 10rem 0;
 
 
-    @media (max-width:$mobileWidth) {
-        height: 100vh;
-    }
-
-    .blogH2 {
+    .contactH2 {
         font-size: calc(4 * $baseFont);
         font-family: $bodyFont;
         font-weight: bold;
-        line-height: 58px;
         letter-spacing: 9px;
+        line-height: 60px;
         color: $iceBlue;
     }
 }

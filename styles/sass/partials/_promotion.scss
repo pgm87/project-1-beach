@@ -1,14 +1,39 @@
+@use "variables" as *;
+
 .promotion {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 10px;
 
+    .promotionImageBox {
+
+        background-image: url(../assets/banner-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+
+        @media (max-width:$mobileWidth) {
+            min-height: 50vh;
+
+        }
+
+
+    }
+
     .promotionContentBox {
         padding: 10% 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        h4 {
+            text-align: center;
+            align-self: center;
+            padding: 0;
+        }
+
+
 
         p {
             text-align: center;

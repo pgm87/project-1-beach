@@ -1,34 +1,125 @@
 @use "variables" as *;
 
 
-.navContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    color: $greenCyan;
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: $twilightBlue;
 
-    ul {
+    .wrapper {
         display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        color: $greenCyan;
 
+        ul {
+            display: flex;
 
-        li {
-            margin-right: 15px;
-            transition: 0.3s;
-            font-family: "Lato";
-            font-weight: bold;
-            color: $iceBlue;
-            transition: 0.3s;
-            font-size: 20px;
-
-            &:hover {
-                color: $greenCyan;
+            @media (max-width:$tabletRegular) {
+                display: none;
+                flex-basis: 0;
             }
 
-            &:focus {
-                color: $greenCyan;
+
+            li {
+                margin-right: 15px;
+                transition: 0.3s;
+                font-family: "Lato";
+                font-weight: bold;
+                color: $iceBlue;
+                transition: 0.3s;
+                font-size: 20px;
+
+                &:hover {
+                    color: $greenCyan;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    color: $greenCyan;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+
+.slideOutNav {
+    width: 100%;
+    max-width: 506px;
+    height: 100vh;
+    z-index: 200;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $greenCyan;
+    font-family: $bodyFont;
+    font-weight: bold;
+    color: $iceBlue;
+    font-size: calc(1.4 * $baseFont);
+    padding: 35px 50px;
+
+    .buttonContainer {
+        align-self: flex-end;
+    }
+
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        li {
+            padding: 20px;
+            transition: 0.3s;
+
+            a {
+                line-height: 2.5rem;
+
+
+                &:hover {
+                    color: $twilightBlue;
+                }
+
+                &:focus {
+                    color: $twilightBlue;
+                }
             }
         }
 
-
     }
+
+}
+
+.slideOutHidden {
+    transition: 0.3s;
+    right: -512px;
+    position: fixed;
+    top: 0;
+}
+
+.slideOutReveal {
+    transition: 0.3s;
+    right: 0px;
+    position: fixed;
+    top: 0;
+}
+
+.openButton {
+    visibility: hidden;
+    position: fixed;
+    top: 10px;
+    right: 5%;
+
+    @media (max-width:$tabletRegular) {
+        visibility: visible;
+    }
+}
+
+.heightNone {
+    height: 0;
 }
